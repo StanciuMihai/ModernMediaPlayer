@@ -8,7 +8,7 @@ The end result was a fully responsive UI with side menu and sliding panels, as s
 ![alt text](https://raw.githubusercontent.com/StanciuMihai/ModernMediaPlayer/master/preview2.png)
 
 At some point in development, the app looked something like this:
-![alt text](https://raw.githubusercontent.com/StanciuMihai/ModernMediaPlayer/master/preview1.png)
+![alt text](https://raw.githubusercontent.com/StanciuMihai/ModernMediaPlayer/master/preview.png)
 
 
 
