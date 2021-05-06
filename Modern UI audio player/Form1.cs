@@ -172,11 +172,13 @@ namespace Modern_UI_audio_player
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
+            openChildForm(new Visualisation());
             mp3Player.play();
         }
 
         private void btnStop_Click(object sender, EventArgs e)
         {
+            Application.OpenForms["Visualisation"].Close();
             mp3Player.stop();
         }
     }
