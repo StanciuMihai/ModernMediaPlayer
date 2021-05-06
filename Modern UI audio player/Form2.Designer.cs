@@ -66,7 +66,7 @@ namespace Modern_UI_audio_player
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(150, 40);
             this.button4.TabIndex = 16;
-            this.button4.Text = "button4";
+            this.button4.Text = "Open";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -81,7 +81,7 @@ namespace Modern_UI_audio_player
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 40);
             this.button3.TabIndex = 15;
-            this.button3.Text = "button3";
+            this.button3.Text = "Open multiple";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -96,7 +96,7 @@ namespace Modern_UI_audio_player
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 40);
             this.button2.TabIndex = 14;
-            this.button2.Text = "button2";
+            this.button2.Text = "Add new";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
@@ -111,7 +111,7 @@ namespace Modern_UI_audio_player
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 40);
             this.button1.TabIndex = 13;
-            this.button1.Text = "button1";
+            this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
