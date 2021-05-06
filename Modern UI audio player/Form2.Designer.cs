@@ -144,9 +144,9 @@ namespace Modern_UI_audio_player
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
             this.label1.Location = new System.Drawing.Point(244, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 25);
+            this.label1.Size = new System.Drawing.Size(178, 25);
             this.label1.TabIndex = 10;
-            this.label1.Text = "OPEN FILES";
+            this.label1.Text = "          OPEN FILES";
             // 
             // Form2
             // 
