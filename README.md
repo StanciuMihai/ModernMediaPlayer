@@ -8,6 +8,10 @@ The purpose of this program is to demonstrate responsive design and modern UI de
 The end result was a fully responsive UI with side menu and sliding panels, as seen below:
 ![alt text](https://raw.githubusercontent.com/StanciuMihai/ModernMediaPlayer/master/preview2.png)
 
+Since release, the app got more features and designs done:
+![alt text](https://raw.githubusercontent.com/StanciuMihai/ModernMediaPlayer/master/preview3.png)
+
+
 At some point in development, the app looked something like this:
 ![alt text](https://raw.githubusercontent.com/StanciuMihai/ModernMediaPlayer/master/preview.png)
 
