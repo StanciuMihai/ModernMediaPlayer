@@ -1,7 +1,7 @@
 # ModernMediaPlayer
 A modern UI design of a media player, made in WinForms using .NET framework 4.7.2
 
-Icons and Logos were made by Rj Code Advanced and used with permission
+Logo and icons were provided by Rj Code Advanced
 
 The purpose of this program is to demonstrate responsive design and modern UI design techniques using WinForms
 
