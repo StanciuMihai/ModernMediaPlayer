@@ -55,6 +55,7 @@ namespace Modern_UI_audio_player
 
         private void btnOpenFiles_Click(object sender, EventArgs e)
         {
+            openChildForm(new Form2());
             hideSubMenu();
         }
 
@@ -125,6 +126,7 @@ namespace Modern_UI_audio_player
 
         private void btnEqualizer_Click(object sender, EventArgs e)
         {
+            openChildForm(new Form3());
             hideSubMenu();
         }
 
