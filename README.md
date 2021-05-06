@@ -12,8 +12,13 @@ Since release, the app got more features and designs done:
 ![alt text](https://raw.githubusercontent.com/StanciuMihai/ModernMediaPlayer/master/preview3.png)
 
 
+![alt text](https://raw.githubusercontent.com/StanciuMihai/ModernMediaPlayer/master/preview4.png)
+
+
 At some point in development, the app looked something like this:
 ![alt text](https://raw.githubusercontent.com/StanciuMihai/ModernMediaPlayer/master/preview.png)
+
+
 
 
 
