@@ -108,7 +108,7 @@ namespace Modern_UI_audio_player
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(250, 561);
+            this.panelSideMenu.Size = new System.Drawing.Size(250, 582);
             this.panelSideMenu.TabIndex = 0;
             // 
             // panelLogo
@@ -462,9 +462,9 @@ namespace Modern_UI_audio_player
             this.panelPlayer.Controls.Add(this.pictureBox3);
             this.panelPlayer.Controls.Add(this.pictureBox2);
             this.panelPlayer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelPlayer.Location = new System.Drawing.Point(250, 431);
+            this.panelPlayer.Location = new System.Drawing.Point(250, 452);
             this.panelPlayer.Name = "panelPlayer";
-            this.panelPlayer.Size = new System.Drawing.Size(684, 130);
+            this.panelPlayer.Size = new System.Drawing.Size(876, 130);
             this.panelPlayer.TabIndex = 1;
             // 
             // panelChildForm
@@ -474,14 +474,14 @@ namespace Modern_UI_audio_player
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(684, 431);
+            this.panelChildForm.Size = new System.Drawing.Size(876, 452);
             this.panelChildForm.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(239, 96);
+            this.pictureBox1.Location = new System.Drawing.Point(335, 107);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(226, 218);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -493,7 +493,7 @@ namespace Modern_UI_audio_player
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.LightGray;
-            this.label3.Location = new System.Drawing.Point(595, 36);
+            this.label3.Location = new System.Drawing.Point(691, 36);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(28, 17);
             this.label3.TabIndex = 23;
@@ -504,7 +504,7 @@ namespace Modern_UI_audio_player
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(33)))), ((int)(((byte)(50)))));
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(389, 42);
+            this.panel4.Location = new System.Drawing.Point(485, 42);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 5);
             this.panel4.TabIndex = 21;
@@ -532,7 +532,7 @@ namespace Modern_UI_audio_player
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(628, 84);
+            this.label1.Location = new System.Drawing.Point(820, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 17);
             this.label1.TabIndex = 20;
@@ -546,7 +546,7 @@ namespace Modern_UI_audio_player
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(58, 91);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(564, 5);
+            this.panel2.Size = new System.Drawing.Size(756, 5);
             this.panel2.TabIndex = 19;
             // 
             // panel3
@@ -561,7 +561,7 @@ namespace Modern_UI_audio_player
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(359, 33);
+            this.pictureBox8.Location = new System.Drawing.Point(455, 33);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(24, 24);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -573,7 +573,7 @@ namespace Modern_UI_audio_player
             this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(83, 33);
+            this.pictureBox7.Location = new System.Drawing.Point(179, 33);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(24, 24);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -585,7 +585,7 @@ namespace Modern_UI_audio_player
             this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(128, 33);
+            this.pictureBox6.Location = new System.Drawing.Point(224, 33);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(24, 24);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -597,7 +597,7 @@ namespace Modern_UI_audio_player
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(320, 33);
+            this.pictureBox5.Location = new System.Drawing.Point(416, 33);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(24, 24);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -609,7 +609,7 @@ namespace Modern_UI_audio_player
             this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(170, 33);
+            this.pictureBox4.Location = new System.Drawing.Point(266, 33);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(24, 24);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -621,7 +621,7 @@ namespace Modern_UI_audio_player
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(279, 33);
+            this.pictureBox3.Location = new System.Drawing.Point(375, 33);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(24, 24);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -633,7 +633,7 @@ namespace Modern_UI_audio_player
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(221, 29);
+            this.pictureBox2.Location = new System.Drawing.Point(317, 29);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -675,7 +675,7 @@ namespace Modern_UI_audio_player
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 561);
+            this.ClientSize = new System.Drawing.Size(1126, 582);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelPlayer);
             this.Controls.Add(this.panelSideMenu);
