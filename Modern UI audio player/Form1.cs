@@ -132,6 +132,7 @@ namespace Modern_UI_audio_player
 
         private void btnHelp_Click(object sender, EventArgs e)
         {
+            openChildForm(new HelpForm());
             hideSubMenu();
         }
 
