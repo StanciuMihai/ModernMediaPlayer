@@ -12,6 +12,7 @@ namespace Modern_UI_audio_player
 {
     public partial class Form1 : Form
     {
+        private Mp3Player mp3Player = new Mp3Player();
         public Form1()
         {
             InitializeComponent();
@@ -155,6 +156,28 @@ namespace Modern_UI_audio_player
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Filter = "Mp3 Files| *.mp3";
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    mp3Player.open(ofd.FileName);
+                }
+            }
+        }
+
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+            mp3Player.play();
+        }
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            mp3Player.stop();
         }
     }
 }

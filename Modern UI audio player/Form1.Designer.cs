@@ -63,14 +63,15 @@ namespace Modern_UI_audio_player
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnPlay = new System.Windows.Forms.Button();
+            this.btnBrowse = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnStop = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelMediaSubMenu.SuspendLayout();
@@ -82,12 +83,8 @@ namespace Modern_UI_audio_player
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
@@ -449,18 +446,19 @@ namespace Modern_UI_audio_player
             // panelPlayer
             // 
             this.panelPlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.panelPlayer.Controls.Add(this.btnStop);
+            this.panelPlayer.Controls.Add(this.button2);
+            this.panelPlayer.Controls.Add(this.button1);
+            this.panelPlayer.Controls.Add(this.btnBrowse);
+            this.panelPlayer.Controls.Add(this.btnPlay);
             this.panelPlayer.Controls.Add(this.label3);
             this.panelPlayer.Controls.Add(this.panel4);
             this.panelPlayer.Controls.Add(this.label2);
             this.panelPlayer.Controls.Add(this.label1);
             this.panelPlayer.Controls.Add(this.panel2);
             this.panelPlayer.Controls.Add(this.pictureBox8);
-            this.panelPlayer.Controls.Add(this.pictureBox7);
             this.panelPlayer.Controls.Add(this.pictureBox6);
             this.panelPlayer.Controls.Add(this.pictureBox5);
-            this.panelPlayer.Controls.Add(this.pictureBox4);
-            this.panelPlayer.Controls.Add(this.pictureBox3);
-            this.panelPlayer.Controls.Add(this.pictureBox2);
             this.panelPlayer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelPlayer.Location = new System.Drawing.Point(250, 452);
             this.panelPlayer.Name = "panelPlayer";
@@ -493,7 +491,7 @@ namespace Modern_UI_audio_player
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.LightGray;
-            this.label3.Location = new System.Drawing.Point(691, 36);
+            this.label3.Location = new System.Drawing.Point(729, 36);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(28, 17);
             this.label3.TabIndex = 23;
@@ -504,7 +502,7 @@ namespace Modern_UI_audio_player
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(33)))), ((int)(((byte)(50)))));
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(485, 42);
+            this.panel4.Location = new System.Drawing.Point(523, 42);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 5);
             this.panel4.TabIndex = 21;
@@ -561,24 +559,12 @@ namespace Modern_UI_audio_player
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(455, 33);
+            this.pictureBox8.Location = new System.Drawing.Point(493, 33);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(24, 24);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox8.TabIndex = 18;
             this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(179, 33);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox7.TabIndex = 17;
-            this.pictureBox7.TabStop = false;
             // 
             // pictureBox6
             // 
@@ -597,48 +583,12 @@ namespace Modern_UI_audio_player
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(416, 33);
+            this.pictureBox5.Location = new System.Drawing.Point(454, 33);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(24, 24);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox5.TabIndex = 15;
             this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(266, 33);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(375, 33);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(317, 29);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
             // 
             // pictureBox9
             // 
@@ -671,6 +621,74 @@ namespace Modern_UI_audio_player
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnPlay
+            // 
+            this.btnPlay.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPlay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPlay.FlatAppearance.BorderSize = 0;
+            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlay.Image = ((System.Drawing.Image)(resources.GetObject("btnPlay.Image")));
+            this.btnPlay.Location = new System.Drawing.Point(317, 29);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(32, 32);
+            this.btnPlay.TabIndex = 1;
+            this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
+            // 
+            // btnBrowse
+            // 
+            this.btnBrowse.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBrowse.FlatAppearance.BorderSize = 0;
+            this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBrowse.Image = ((System.Drawing.Image)(resources.GetObject("btnBrowse.Image")));
+            this.btnBrowse.Location = new System.Drawing.Point(179, 33);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(24, 24);
+            this.btnBrowse.TabIndex = 2;
+            this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(266, 33);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(24, 24);
+            this.button1.TabIndex = 24;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(375, 33);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(24, 24);
+            this.button2.TabIndex = 25;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // btnStop
+            // 
+            this.btnStop.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnStop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStop.FlatAppearance.BorderSize = 0;
+            this.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStop.Image = ((System.Drawing.Image)(resources.GetObject("btnStop.Image")));
+            this.btnStop.Location = new System.Drawing.Point(415, 33);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(24, 24);
+            this.btnStop.TabIndex = 26;
+            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -698,12 +716,8 @@ namespace Modern_UI_audio_player
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
@@ -745,13 +759,14 @@ namespace Modern_UI_audio_player
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.Button btnStop;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
