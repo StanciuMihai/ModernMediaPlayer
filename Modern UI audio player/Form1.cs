@@ -47,5 +47,90 @@ namespace Modern_UI_audio_player
 
         }
 
+        private void btnMedia_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelMediaSubMenu);
+
+        }
+
+        private void btnOpenFiles_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnOpenFolder_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnOpenDisk_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnOpenRecentMedia_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnNewPlaylist_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnManagePlaylist_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnImportPlaylist_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnExportPlaylist_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnMediaConverter_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnEffectsAndFilters_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnPreferences_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnTheme_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnPlaylist_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelPlaylistSubMenu);
+        }
+
+        private void btnTools_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelToolsSubMenu);
+        }
+
+        private void btnEqualizer_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+        }
     }
 }
