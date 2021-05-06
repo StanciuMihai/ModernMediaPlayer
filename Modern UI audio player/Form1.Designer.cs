@@ -70,6 +70,7 @@ namespace Modern_UI_audio_player
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelMediaSubMenu.SuspendLayout();
@@ -94,6 +95,7 @@ namespace Modern_UI_audio_player
             // 
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panelSideMenu.Controls.Add(this.btnExit);
             this.panelSideMenu.Controls.Add(this.btnHelp);
             this.panelSideMenu.Controls.Add(this.panelToolsSubMenu);
             this.panelSideMenu.Controls.Add(this.btnTools);
@@ -131,7 +133,7 @@ namespace Modern_UI_audio_player
             this.btnMedia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnMedia.Size = new System.Drawing.Size(233, 45);
             this.btnMedia.TabIndex = 1;
-            this.btnMedia.Text = "Media";
+            this.btnMedia.Text = "  Media";
             this.btnMedia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMedia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMedia.UseVisualStyleBackColor = true;
@@ -227,7 +229,7 @@ namespace Modern_UI_audio_player
             this.btnPlaylist.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnPlaylist.Size = new System.Drawing.Size(233, 45);
             this.btnPlaylist.TabIndex = 3;
-            this.btnPlaylist.Text = "Playlist Management";
+            this.btnPlaylist.Text = "  Playlist Management";
             this.btnPlaylist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPlaylist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPlaylist.UseVisualStyleBackColor = true;
@@ -323,7 +325,7 @@ namespace Modern_UI_audio_player
             this.btnEqualizer.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnEqualizer.Size = new System.Drawing.Size(233, 45);
             this.btnEqualizer.TabIndex = 5;
-            this.btnEqualizer.Text = "Equalizer";
+            this.btnEqualizer.Text = "  Equalizer";
             this.btnEqualizer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEqualizer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEqualizer.UseVisualStyleBackColor = true;
@@ -342,7 +344,7 @@ namespace Modern_UI_audio_player
             this.btnTools.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnTools.Size = new System.Drawing.Size(233, 45);
             this.btnTools.TabIndex = 6;
-            this.btnTools.Text = "Tools";
+            this.btnTools.Text = "  Tools";
             this.btnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTools.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTools.UseVisualStyleBackColor = true;
@@ -438,7 +440,7 @@ namespace Modern_UI_audio_player
             this.btnHelp.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnHelp.Size = new System.Drawing.Size(233, 45);
             this.btnHelp.TabIndex = 8;
-            this.btnHelp.Text = "Help";
+            this.btnHelp.Text = "  Help";
             this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHelp.UseVisualStyleBackColor = true;
@@ -648,6 +650,27 @@ namespace Modern_UI_audio_player
             this.pictureBox9.TabIndex = 1;
             this.pictureBox9.TabStop = false;
             // 
+            // btnExit
+            // 
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(0, 820);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnExit.Size = new System.Drawing.Size(233, 45);
+            this.btnExit.TabIndex = 10;
+            this.btnExit.Text = "  Exit";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -727,6 +750,7 @@ namespace Modern_UI_audio_player
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 

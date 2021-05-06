@@ -150,5 +150,10 @@ namespace Modern_UI_audio_player
             childForm.Show();
 
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
