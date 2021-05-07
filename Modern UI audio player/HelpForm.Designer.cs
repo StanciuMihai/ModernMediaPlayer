@@ -53,7 +53,7 @@ namespace Modern_UI_audio_player
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(219, 196);
+            this.label2.Location = new System.Drawing.Point(219, 164);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(357, 39);
             this.label2.TabIndex = 1;
@@ -65,7 +65,7 @@ namespace Modern_UI_audio_player
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightGray;
-            this.label3.Location = new System.Drawing.Point(178, 335);
+            this.label3.Location = new System.Drawing.Point(178, 303);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(462, 33);
             this.label3.TabIndex = 2;

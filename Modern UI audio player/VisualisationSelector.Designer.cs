@@ -41,7 +41,7 @@ namespace Modern_UI_audio_player
             this.btnVis1.FlatAppearance.BorderSize = 0;
             this.btnVis1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVis1.Image = ((System.Drawing.Image)(resources.GetObject("btnVis1.Image")));
-            this.btnVis1.Location = new System.Drawing.Point(156, 112);
+            this.btnVis1.Location = new System.Drawing.Point(104, 105);
             this.btnVis1.Name = "btnVis1";
             this.btnVis1.Size = new System.Drawing.Size(142, 80);
             this.btnVis1.TabIndex = 0;
@@ -54,7 +54,7 @@ namespace Modern_UI_audio_player
             this.btnVis2.FlatAppearance.BorderSize = 0;
             this.btnVis2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVis2.Image = ((System.Drawing.Image)(resources.GetObject("btnVis2.Image")));
-            this.btnVis2.Location = new System.Drawing.Point(295, 112);
+            this.btnVis2.Location = new System.Drawing.Point(243, 105);
             this.btnVis2.Name = "btnVis2";
             this.btnVis2.Size = new System.Drawing.Size(142, 80);
             this.btnVis2.TabIndex = 1;
@@ -67,7 +67,7 @@ namespace Modern_UI_audio_player
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(277, 36);
+            this.label1.Location = new System.Drawing.Point(219, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(278, 25);
             this.label1.TabIndex = 20;
@@ -78,7 +78,7 @@ namespace Modern_UI_audio_player
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(684, 431);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVis2);
             this.Controls.Add(this.btnVis1);
