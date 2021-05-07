@@ -172,7 +172,7 @@ namespace Modern_UI_audio_player
             this.btnTheme.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnTheme.Size = new System.Drawing.Size(233, 40);
             this.btnTheme.TabIndex = 3;
-            this.btnTheme.Text = "Theme";
+            this.btnTheme.Text = "Visualisations";
             this.btnTheme.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTheme.UseVisualStyleBackColor = true;
             this.btnTheme.Click += new System.EventHandler(this.btnTheme_Click);

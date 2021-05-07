@@ -18,6 +18,7 @@ namespace Modern_UI_audio_player
             InitializeComponent();
             customizeDesign();
         }
+        bool isStopped = true;
         private void customizeDesign()
         {
             panelMediaSubMenu.Visible = false;
@@ -112,6 +113,7 @@ namespace Modern_UI_audio_player
 
         private void btnTheme_Click(object sender, EventArgs e)
         {
+            openChildForm(new VisualisationSelector());
             hideSubMenu();
         }
 
@@ -169,16 +171,25 @@ namespace Modern_UI_audio_player
                 }
             }
         }
-
+        public static string vis = "Visualisation";
         private void btnPlay_Click(object sender, EventArgs e)
         {
+            isStopped = false;
+            if (vis == "Visualisation")
             openChildForm(new Visualisation());
+            if (vis == "Visualisation2")
+                openChildForm(new Visualisation2());
             mp3Player.play();
         }
 
+        
         private void btnStop_Click(object sender, EventArgs e)
         {
-            Application.OpenForms["Visualisation"].Close();
+            if (isStopped == false)
+            {
+                Application.OpenForms[vis].Close();
+                isStopped = true;
+            }
             mp3Player.stop();
         }
     }

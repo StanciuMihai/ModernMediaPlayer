@@ -79,6 +79,18 @@
     <Compile Include="Visualisation.Designer.cs">
       <DependentUpon>Visualisation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Visualisation2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation2.Designer.cs">
+      <DependentUpon>Visualisation2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualisationSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisualisationSelector.Designer.cs">
+      <DependentUpon>VisualisationSelector.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +114,12 @@
     </Compile>
     <EmbeddedResource Include="Visualisation.resx">
       <DependentUpon>Visualisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation2.resx">
+      <DependentUpon>Visualisation2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualisationSelector.resx">
+      <DependentUpon>VisualisationSelector.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
