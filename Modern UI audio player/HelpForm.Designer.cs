@@ -41,11 +41,11 @@ namespace Modern_UI_audio_player
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(108, 91);
+            this.label1.Location = new System.Drawing.Point(121, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(645, 25);
+            this.label1.Size = new System.Drawing.Size(616, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Thank you very much for trying out Modern UI Media Player!";
+            this.label1.Text = "Thank you very much for trying out Modern Media Player!";
             // 
             // label2
             // 
