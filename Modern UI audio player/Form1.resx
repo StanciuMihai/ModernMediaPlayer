@@ -358,6 +358,34 @@
         e7kBAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btnPause.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        rkJggg==
+</value>
+  </data>
   <data name="axWindowsMediaPlayer1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w

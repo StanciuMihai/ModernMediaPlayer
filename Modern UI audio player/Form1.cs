@@ -1,10 +1,12 @@
-﻿using System;
+﻿using AxWMPLib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,12 +14,14 @@ namespace Modern_UI_audio_player
 {
     public partial class Form1 : Form
     {
-        private Mp3Player mp3Player = new Mp3Player();
+        //private Mp3Player mp3Player = new Mp3Player();
         public Form1()
         {
             InitializeComponent();
             customizeDesign();
         }
+        public static String[] paths, files;
+        public static System.Windows.Forms.TextBox txtSong = new TextBox();
         bool isStopped = true;
         private void customizeDesign()
         {
@@ -49,6 +53,8 @@ namespace Modern_UI_audio_player
 
         }
 
+
+
         private void btnMedia_Click(object sender, EventArgs e)
         {
             showSubMenu(panelMediaSubMenu);
@@ -59,6 +65,7 @@ namespace Modern_UI_audio_player
         {
             openChildForm(new Form2());
             hideSubMenu();
+            panelNowPlaying.Hide();
         }
 
         private void btnOpenFolder_Click(object sender, EventArgs e)
@@ -78,6 +85,8 @@ namespace Modern_UI_audio_player
 
         private void btnNewPlaylist_Click(object sender, EventArgs e)
         {
+            panelNowPlaying.Show();
+            panelNowPlaying.BringToFront();
             hideSubMenu();
         }
 
@@ -115,6 +124,7 @@ namespace Modern_UI_audio_player
         {
             openChildForm(new VisualisationSelector());
             hideSubMenu();
+            panelNowPlaying.Hide();
         }
 
         private void btnPlaylist_Click(object sender, EventArgs e)
@@ -131,12 +141,14 @@ namespace Modern_UI_audio_player
         {
             openChildForm(new Form3());
             hideSubMenu();
+            panelNowPlaying.Hide();
         }
 
         private void btnHelp_Click(object sender, EventArgs e)
         {
             openChildForm(new HelpForm());
             hideSubMenu();
+            panelNowPlaying.Hide();
         }
 
         private Form activeForm = null;
@@ -162,14 +174,9 @@ namespace Modern_UI_audio_player
 
         private void btnBrowse_Click(object sender, EventArgs e)
         {
-            using (OpenFileDialog ofd = new OpenFileDialog())
-            {
-                ofd.Filter = "Mp3 Files| *.mp3";
-                if (ofd.ShowDialog() == DialogResult.OK)
-                {
-                    mp3Player.open(ofd.FileName);
-                }
-            }
+            panelNowPlaying.Show();
+            panelNowPlaying.BringToFront();
+           
         }
         public static string vis = "Visualisation";
         private void btnPlay_Click(object sender, EventArgs e)
@@ -179,7 +186,10 @@ namespace Modern_UI_audio_player
             openChildForm(new Visualisation());
             if (vis == "Visualisation2")
                 openChildForm(new Visualisation2());
-            mp3Player.play();
+            
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            btnPause.Show();
+            btnPlay.Hide();
         }
 
         
@@ -191,7 +201,55 @@ namespace Modern_UI_audio_player
                 //Application.OpenForms[vis].Close();
                 isStopped = true;
             }
-            mp3Player.stop();
+            panelNowPlaying.Hide();
+            axWindowsMediaPlayer1.Ctlcontrols.stop();
+            btnPause.Hide();
+            btnPlay.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            panelNowPlaying.Hide();
+        }
+
+        private void listBoxSongs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
+            Thread.Sleep(10);
+            axWindowsMediaPlayer1.Ctlcontrols.stop();
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            listBoxSongs.Items.Clear();
+        }
+
+        private void btnPause_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.pause();
+            btnPause.Hide();
+            btnPlay.Show();
+
+        }
+
+        private void btnAddToPlaylist_Click(object sender, EventArgs e)
+        {
+            listBoxSongs.Items.Clear();
+            //Code to SElect Songs
+            OpenFileDialog ofd = new OpenFileDialog();
+            //Code to select multiple files
+            ofd.Multiselect = true;
+            if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                files = ofd.SafeFileNames; //Save the names of the track in files array
+                paths = ofd.FileNames; //Save the paths of the tracks in path array
+                //Display the music titles in listbox
+                for (int i = 0; i < files.Length; i++)
+                {
+                    listBoxSongs.Items.Add(files[i]); //Display Songs in Listbox
+                }
+            }
         }
     }
 }

@@ -60,6 +60,6 @@ namespace Modern_UI_audio_player
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.PictureBox pictureBox1;
     }
 }
