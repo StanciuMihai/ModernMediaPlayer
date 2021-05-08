@@ -143,7 +143,7 @@ namespace Modern_UI_audio_player
         private void openChildForm(Form childForm)
         {
             if (activeForm != null)
-                activeForm.Close();
+                activeForm.Hide(); // Replaced Close with Hide for testing purposes
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -187,7 +187,8 @@ namespace Modern_UI_audio_player
         {
             if (isStopped == false)
             {
-                Application.OpenForms[vis].Close();
+                activeForm.Hide(); //Replaced Close with Hide for testing purposes
+                //Application.OpenForms[vis].Close();
                 isStopped = true;
             }
             mp3Player.stop();

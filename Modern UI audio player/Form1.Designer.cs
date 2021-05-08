@@ -72,6 +72,8 @@ namespace Modern_UI_audio_player
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelSideMenu.SuspendLayout();
             this.panelToolsSubMenu.SuspendLayout();
             this.panelPlaylistSubMenu.SuspendLayout();
@@ -86,6 +88,7 @@ namespace Modern_UI_audio_player
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -477,6 +480,8 @@ namespace Modern_UI_audio_player
             // panelPlayer
             // 
             this.panelPlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.panelPlayer.Controls.Add(this.panel1);
+            this.panelPlayer.Controls.Add(this.axWindowsMediaPlayer1);
             this.panelPlayer.Controls.Add(this.btnStop);
             this.panelPlayer.Controls.Add(this.button2);
             this.panelPlayer.Controls.Add(this.button1);
@@ -597,7 +602,7 @@ namespace Modern_UI_audio_player
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(12, 84);
+            this.label2.Location = new System.Drawing.Point(12, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 17);
             this.label2.TabIndex = 22;
@@ -608,7 +613,7 @@ namespace Modern_UI_audio_player
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(628, 84);
+            this.label1.Location = new System.Drawing.Point(628, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 17);
             this.label1.TabIndex = 20;
@@ -689,6 +694,25 @@ namespace Modern_UI_audio_player
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(61, 84);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(564, 49);
+            this.axWindowsMediaPlayer1.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 102);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(684, 28);
+            this.panel1.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -719,6 +743,7 @@ namespace Modern_UI_audio_player
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -767,6 +792,8 @@ namespace Modern_UI_audio_player
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
