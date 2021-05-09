@@ -101,6 +101,7 @@ namespace Modern_UI_audio_player
             this.btnVis3.Size = new System.Drawing.Size(132, 75);
             this.btnVis3.TabIndex = 21;
             this.btnVis3.UseVisualStyleBackColor = true;
+            this.btnVis3.Click += new System.EventHandler(this.btnVis3_Click);
             // 
             // btnVis4
             // 
@@ -114,6 +115,7 @@ namespace Modern_UI_audio_player
             this.btnVis4.Size = new System.Drawing.Size(132, 75);
             this.btnVis4.TabIndex = 22;
             this.btnVis4.UseVisualStyleBackColor = true;
+            this.btnVis4.Click += new System.EventHandler(this.btnVis4_Click);
             // 
             // btnVis8
             // 
@@ -127,6 +129,7 @@ namespace Modern_UI_audio_player
             this.btnVis8.Size = new System.Drawing.Size(132, 75);
             this.btnVis8.TabIndex = 26;
             this.btnVis8.UseVisualStyleBackColor = true;
+            this.btnVis8.Click += new System.EventHandler(this.btnVis8_Click);
             // 
             // btnVis7
             // 
@@ -140,6 +143,7 @@ namespace Modern_UI_audio_player
             this.btnVis7.Size = new System.Drawing.Size(132, 75);
             this.btnVis7.TabIndex = 25;
             this.btnVis7.UseVisualStyleBackColor = true;
+            this.btnVis7.Click += new System.EventHandler(this.btnVis7_Click);
             // 
             // btnVis6
             // 
@@ -153,6 +157,7 @@ namespace Modern_UI_audio_player
             this.btnVis6.Size = new System.Drawing.Size(132, 75);
             this.btnVis6.TabIndex = 24;
             this.btnVis6.UseVisualStyleBackColor = true;
+            this.btnVis6.Click += new System.EventHandler(this.btnVis6_Click);
             // 
             // btnVis5
             // 
@@ -166,6 +171,7 @@ namespace Modern_UI_audio_player
             this.btnVis5.Size = new System.Drawing.Size(132, 75);
             this.btnVis5.TabIndex = 23;
             this.btnVis5.UseVisualStyleBackColor = true;
+            this.btnVis5.Click += new System.EventHandler(this.btnVis5_Click);
             // 
             // btnVis12
             // 
@@ -179,6 +185,7 @@ namespace Modern_UI_audio_player
             this.btnVis12.Size = new System.Drawing.Size(132, 75);
             this.btnVis12.TabIndex = 30;
             this.btnVis12.UseVisualStyleBackColor = true;
+            this.btnVis12.Click += new System.EventHandler(this.btnVis12_Click);
             // 
             // btnVis11
             // 
@@ -192,6 +199,7 @@ namespace Modern_UI_audio_player
             this.btnVis11.Size = new System.Drawing.Size(132, 75);
             this.btnVis11.TabIndex = 29;
             this.btnVis11.UseVisualStyleBackColor = true;
+            this.btnVis11.Click += new System.EventHandler(this.btnVis11_Click);
             // 
             // btnVis10
             // 
@@ -205,6 +213,7 @@ namespace Modern_UI_audio_player
             this.btnVis10.Size = new System.Drawing.Size(132, 75);
             this.btnVis10.TabIndex = 28;
             this.btnVis10.UseVisualStyleBackColor = true;
+            this.btnVis10.Click += new System.EventHandler(this.btnVis10_Click);
             // 
             // btnVis9
             // 
@@ -218,6 +227,7 @@ namespace Modern_UI_audio_player
             this.btnVis9.Size = new System.Drawing.Size(132, 75);
             this.btnVis9.TabIndex = 27;
             this.btnVis9.UseVisualStyleBackColor = true;
+            this.btnVis9.Click += new System.EventHandler(this.btnVis9_Click);
             // 
             // btnVis16
             // 
@@ -231,6 +241,7 @@ namespace Modern_UI_audio_player
             this.btnVis16.Size = new System.Drawing.Size(132, 75);
             this.btnVis16.TabIndex = 34;
             this.btnVis16.UseVisualStyleBackColor = true;
+            this.btnVis16.Click += new System.EventHandler(this.btnVis16_Click);
             // 
             // btnVis15
             // 
@@ -244,6 +255,7 @@ namespace Modern_UI_audio_player
             this.btnVis15.Size = new System.Drawing.Size(132, 75);
             this.btnVis15.TabIndex = 33;
             this.btnVis15.UseVisualStyleBackColor = true;
+            this.btnVis15.Click += new System.EventHandler(this.btnVis15_Click);
             // 
             // btnVis14
             // 
@@ -257,6 +269,7 @@ namespace Modern_UI_audio_player
             this.btnVis14.Size = new System.Drawing.Size(132, 75);
             this.btnVis14.TabIndex = 32;
             this.btnVis14.UseVisualStyleBackColor = true;
+            this.btnVis14.Click += new System.EventHandler(this.btnVis14_Click);
             // 
             // btnVis13
             // 
@@ -270,6 +283,7 @@ namespace Modern_UI_audio_player
             this.btnVis13.Size = new System.Drawing.Size(132, 75);
             this.btnVis13.TabIndex = 31;
             this.btnVis13.UseVisualStyleBackColor = true;
+            this.btnVis13.Click += new System.EventHandler(this.btnVis13_Click);
             // 
             // VisualisationSelector
             // 
