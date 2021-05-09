@@ -1,7 +1,7 @@
 # ModernMediaPlayer
-A modern UI design of a media player, made in WinForms using .NET framework 4.7.2
+A modern UI design of a media player and fully functional backend, made in WinForms using .NET framework 4.7.2 
 
-Logo and icons were provided by Rj Code Advanced
+ Some logos and icons were provided by Rj Code Advanced
 
 The purpose of this program is to demonstrate responsive design and modern UI design techniques using WinForms
 
@@ -18,6 +18,8 @@ Since release, the app got more features and designs done:
 At some point in development, the app looked something like this:
 ![alt text](https://raw.githubusercontent.com/StanciuMihai/ModernMediaPlayer/master/preview.png)
 
+**UPDATE:** Added 16 visualisations to the music player:
+![alt text](https://raw.githubusercontent.com/StanciuMihai/ModernMediaPlayer/master/preview5.png)
 
 
 
