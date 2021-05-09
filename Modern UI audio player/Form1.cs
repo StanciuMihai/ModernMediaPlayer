@@ -186,7 +186,35 @@ namespace Modern_UI_audio_player
             openChildForm(new Visualisation());
             if (vis == "Visualisation2")
                 openChildForm(new Visualisation2());
-            
+            if (vis == "Visualisation3")
+                openChildForm(new Visualisation3());
+            if (vis == "Visualisation4")
+                openChildForm(new Visualisation4());
+            if (vis == "Visualisation5")
+                openChildForm(new Visualisation5());
+            if (vis == "Visualisation6")
+                openChildForm(new Visualisation6());
+            if (vis == "Visualisation7")
+                openChildForm(new Visualisation7());
+            if (vis == "Visualisation8")
+                openChildForm(new Visualisation8());
+            if (vis == "Visualisation9")
+                openChildForm(new Visualisation9());
+            if (vis == "Visualisation10")
+                openChildForm(new Visualisation10());
+            if (vis == "Visualisation11")
+                openChildForm(new Visualisation11());
+            if (vis == "Visualisation12")
+                openChildForm(new Visualisation12());
+            if (vis == "Visualisation13")
+                openChildForm(new Visualisation13());
+            if (vis == "Visualisation14")
+                openChildForm(new Visualisation14());
+            if (vis == "Visualisation15")
+                openChildForm(new Visualisation15());
+            if (vis == "Visualisation16")
+                openChildForm(new Visualisation16());
+
             axWindowsMediaPlayer1.Ctlcontrols.play();
             btnPause.Show();
             btnPlay.Hide();

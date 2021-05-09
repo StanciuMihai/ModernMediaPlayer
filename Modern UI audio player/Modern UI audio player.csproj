@@ -78,11 +78,95 @@
     <Compile Include="Visualisation.Designer.cs">
       <DependentUpon>Visualisation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Visualisation10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation10.Designer.cs">
+      <DependentUpon>Visualisation10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualisation11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation11.Designer.cs">
+      <DependentUpon>Visualisation11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualisation12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation12.Designer.cs">
+      <DependentUpon>Visualisation12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualisation13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation13.Designer.cs">
+      <DependentUpon>Visualisation13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualisation14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation14.Designer.cs">
+      <DependentUpon>Visualisation14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualisation15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation15.Designer.cs">
+      <DependentUpon>Visualisation15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualisation16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation16.Designer.cs">
+      <DependentUpon>Visualisation16.cs</DependentUpon>
+    </Compile>
     <Compile Include="Visualisation2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Visualisation2.Designer.cs">
       <DependentUpon>Visualisation2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualisation3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation3.Designer.cs">
+      <DependentUpon>Visualisation3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualisation4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation4.Designer.cs">
+      <DependentUpon>Visualisation4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualisation5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation5.Designer.cs">
+      <DependentUpon>Visualisation5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualisation6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation6.Designer.cs">
+      <DependentUpon>Visualisation6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualisation7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation7.Designer.cs">
+      <DependentUpon>Visualisation7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualisation8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation8.Designer.cs">
+      <DependentUpon>Visualisation8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualisation9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualisation9.Designer.cs">
+      <DependentUpon>Visualisation9.cs</DependentUpon>
     </Compile>
     <Compile Include="VisualisationSelector.cs">
       <SubType>Form</SubType>
@@ -114,8 +198,50 @@
     <EmbeddedResource Include="Visualisation.resx">
       <DependentUpon>Visualisation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation10.resx">
+      <DependentUpon>Visualisation10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation11.resx">
+      <DependentUpon>Visualisation11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation12.resx">
+      <DependentUpon>Visualisation12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation13.resx">
+      <DependentUpon>Visualisation13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation14.resx">
+      <DependentUpon>Visualisation14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation15.resx">
+      <DependentUpon>Visualisation15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation16.resx">
+      <DependentUpon>Visualisation16.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Visualisation2.resx">
       <DependentUpon>Visualisation2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation3.resx">
+      <DependentUpon>Visualisation3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation4.resx">
+      <DependentUpon>Visualisation4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation5.resx">
+      <DependentUpon>Visualisation5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation6.resx">
+      <DependentUpon>Visualisation6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation7.resx">
+      <DependentUpon>Visualisation7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation8.resx">
+      <DependentUpon>Visualisation8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualisation9.resx">
+      <DependentUpon>Visualisation9.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VisualisationSelector.resx">
       <DependentUpon>VisualisationSelector.cs</DependentUpon>
