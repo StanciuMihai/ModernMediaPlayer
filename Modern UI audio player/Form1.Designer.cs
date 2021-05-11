@@ -55,11 +55,12 @@ namespace Modern_UI_audio_player
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panelPlayer = new System.Windows.Forms.Panel();
+            this.btnPause = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.btnStop = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnNextSong = new System.Windows.Forms.Button();
+            this.btnPreviousSong = new System.Windows.Forms.Button();
             this.btnBrowse = new System.Windows.Forms.Button();
             this.btnPlay = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -71,12 +72,11 @@ namespace Modern_UI_audio_player
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelNowPlaying = new System.Windows.Forms.Panel();
-            this.listBoxSongs = new System.Windows.Forms.ListBox();
-            this.btnAddToPlaylist = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.btnPause = new System.Windows.Forms.Button();
+            this.btnAddToPlaylist = new System.Windows.Forms.Button();
+            this.listBoxSongs = new System.Windows.Forms.ListBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSideMenu.SuspendLayout();
             this.panelToolsSubMenu.SuspendLayout();
             this.panelPlaylistSubMenu.SuspendLayout();
@@ -91,8 +91,8 @@ namespace Modern_UI_audio_player
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panelChildForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelNowPlaying.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -488,8 +488,8 @@ namespace Modern_UI_audio_player
             this.panelPlayer.Controls.Add(this.panel1);
             this.panelPlayer.Controls.Add(this.axWindowsMediaPlayer1);
             this.panelPlayer.Controls.Add(this.btnStop);
-            this.panelPlayer.Controls.Add(this.button2);
-            this.panelPlayer.Controls.Add(this.button1);
+            this.panelPlayer.Controls.Add(this.btnNextSong);
+            this.panelPlayer.Controls.Add(this.btnPreviousSong);
             this.panelPlayer.Controls.Add(this.btnBrowse);
             this.panelPlayer.Controls.Add(this.btnPlay);
             this.panelPlayer.Controls.Add(this.label3);
@@ -503,6 +503,21 @@ namespace Modern_UI_audio_player
             this.panelPlayer.Name = "panelPlayer";
             this.panelPlayer.Size = new System.Drawing.Size(684, 130);
             this.panelPlayer.TabIndex = 1;
+            // 
+            // btnPause
+            // 
+            this.btnPause.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPause.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPause.FlatAppearance.BorderSize = 0;
+            this.btnPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPause.Image = ((System.Drawing.Image)(resources.GetObject("btnPause.Image")));
+            this.btnPause.Location = new System.Drawing.Point(221, 29);
+            this.btnPause.Name = "btnPause";
+            this.btnPause.Size = new System.Drawing.Size(33, 33);
+            this.btnPause.TabIndex = 27;
+            this.btnPause.UseVisualStyleBackColor = true;
+            this.btnPause.Visible = false;
+            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             // 
             // panel1
             // 
@@ -537,31 +552,32 @@ namespace Modern_UI_audio_player
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
-            // button2
+            // btnNextSong
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(279, 33);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(24, 24);
-            this.button2.TabIndex = 25;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnNextSong.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnNextSong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNextSong.FlatAppearance.BorderSize = 0;
+            this.btnNextSong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNextSong.Image = ((System.Drawing.Image)(resources.GetObject("btnNextSong.Image")));
+            this.btnNextSong.Location = new System.Drawing.Point(279, 33);
+            this.btnNextSong.Name = "btnNextSong";
+            this.btnNextSong.Size = new System.Drawing.Size(24, 24);
+            this.btnNextSong.TabIndex = 25;
+            this.btnNextSong.UseVisualStyleBackColor = true;
+            this.btnNextSong.Click += new System.EventHandler(this.btnNextSong_Click);
             // 
-            // button1
+            // btnPreviousSong
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(170, 33);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(24, 24);
-            this.button1.TabIndex = 24;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnPreviousSong.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPreviousSong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPreviousSong.FlatAppearance.BorderSize = 0;
+            this.btnPreviousSong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPreviousSong.Image = ((System.Drawing.Image)(resources.GetObject("btnPreviousSong.Image")));
+            this.btnPreviousSong.Location = new System.Drawing.Point(170, 33);
+            this.btnPreviousSong.Name = "btnPreviousSong";
+            this.btnPreviousSong.Size = new System.Drawing.Size(24, 24);
+            this.btnPreviousSong.TabIndex = 24;
+            this.btnPreviousSong.UseVisualStyleBackColor = true;
             // 
             // btnBrowse
             // 
@@ -685,17 +701,6 @@ namespace Modern_UI_audio_player
             this.panelChildForm.Size = new System.Drawing.Size(684, 431);
             this.panelChildForm.TabIndex = 2;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(239, 96);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(226, 218);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panelNowPlaying
             // 
             this.panelNowPlaying.Controls.Add(this.btnClear);
@@ -706,34 +711,6 @@ namespace Modern_UI_audio_player
             this.panelNowPlaying.Name = "panelNowPlaying";
             this.panelNowPlaying.Size = new System.Drawing.Size(684, 431);
             this.panelNowPlaying.TabIndex = 1;
-            // 
-            // listBoxSongs
-            // 
-            this.listBoxSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.listBoxSongs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxSongs.ForeColor = System.Drawing.Color.White;
-            this.listBoxSongs.FormattingEnabled = true;
-            this.listBoxSongs.ItemHeight = 20;
-            this.listBoxSongs.Location = new System.Drawing.Point(61, 42);
-            this.listBoxSongs.Name = "listBoxSongs";
-            this.listBoxSongs.Size = new System.Drawing.Size(431, 344);
-            this.listBoxSongs.TabIndex = 0;
-            this.listBoxSongs.SelectedIndexChanged += new System.EventHandler(this.listBoxSongs_SelectedIndexChanged);
-            // 
-            // btnAddToPlaylist
-            // 
-            this.btnAddToPlaylist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.btnAddToPlaylist.FlatAppearance.BorderSize = 0;
-            this.btnAddToPlaylist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddToPlaylist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddToPlaylist.ForeColor = System.Drawing.Color.White;
-            this.btnAddToPlaylist.Location = new System.Drawing.Point(549, 56);
-            this.btnAddToPlaylist.Name = "btnAddToPlaylist";
-            this.btnAddToPlaylist.Size = new System.Drawing.Size(92, 44);
-            this.btnAddToPlaylist.TabIndex = 1;
-            this.btnAddToPlaylist.Text = "Add";
-            this.btnAddToPlaylist.UseVisualStyleBackColor = false;
-            this.btnAddToPlaylist.Click += new System.EventHandler(this.btnAddToPlaylist_Click);
             // 
             // btnClear
             // 
@@ -750,20 +727,44 @@ namespace Modern_UI_audio_player
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // btnPause
+            // btnAddToPlaylist
             // 
-            this.btnPause.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPause.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPause.FlatAppearance.BorderSize = 0;
-            this.btnPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPause.Image = ((System.Drawing.Image)(resources.GetObject("btnPause.Image")));
-            this.btnPause.Location = new System.Drawing.Point(221, 29);
-            this.btnPause.Name = "btnPause";
-            this.btnPause.Size = new System.Drawing.Size(33, 33);
-            this.btnPause.TabIndex = 27;
-            this.btnPause.UseVisualStyleBackColor = true;
-            this.btnPause.Visible = false;
-            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
+            this.btnAddToPlaylist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.btnAddToPlaylist.FlatAppearance.BorderSize = 0;
+            this.btnAddToPlaylist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddToPlaylist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddToPlaylist.ForeColor = System.Drawing.Color.White;
+            this.btnAddToPlaylist.Location = new System.Drawing.Point(549, 56);
+            this.btnAddToPlaylist.Name = "btnAddToPlaylist";
+            this.btnAddToPlaylist.Size = new System.Drawing.Size(92, 44);
+            this.btnAddToPlaylist.TabIndex = 1;
+            this.btnAddToPlaylist.Text = "Add";
+            this.btnAddToPlaylist.UseVisualStyleBackColor = false;
+            this.btnAddToPlaylist.Click += new System.EventHandler(this.btnAddToPlaylist_Click);
+            // 
+            // listBoxSongs
+            // 
+            this.listBoxSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.listBoxSongs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxSongs.ForeColor = System.Drawing.Color.White;
+            this.listBoxSongs.FormattingEnabled = true;
+            this.listBoxSongs.ItemHeight = 20;
+            this.listBoxSongs.Location = new System.Drawing.Point(61, 42);
+            this.listBoxSongs.Name = "listBoxSongs";
+            this.listBoxSongs.Size = new System.Drawing.Size(431, 344);
+            this.listBoxSongs.TabIndex = 0;
+            this.listBoxSongs.SelectedIndexChanged += new System.EventHandler(this.listBoxSongs_SelectedIndexChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(239, 96);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(226, 218);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -796,8 +797,8 @@ namespace Modern_UI_audio_player
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelNowPlaying.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -842,8 +843,8 @@ namespace Modern_UI_audio_player
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.Button btnStop;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnNextSong;
+        private System.Windows.Forms.Button btnPreviousSong;
         private System.Windows.Forms.Panel panel1;
         public AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private System.Windows.Forms.Panel panelNowPlaying;

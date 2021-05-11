@@ -23,6 +23,8 @@ namespace Modern_UI_audio_player
         public static String[] paths, files;
         public static System.Windows.Forms.TextBox txtSong = new TextBox();
         bool isStopped = true;
+        bool alreadyPlaying = false;
+        public int maxsongs;
         private void customizeDesign()
         {
             panelMediaSubMenu.Visible = false;
@@ -66,6 +68,7 @@ namespace Modern_UI_audio_player
             openChildForm(new Form2());
             hideSubMenu();
             panelNowPlaying.Hide();
+            alreadyPlaying = false;
         }
 
         private void btnOpenFolder_Click(object sender, EventArgs e)
@@ -88,6 +91,7 @@ namespace Modern_UI_audio_player
             panelNowPlaying.Show();
             panelNowPlaying.BringToFront();
             hideSubMenu();
+            alreadyPlaying = false;
         }
 
         private void btnManagePlaylist_Click(object sender, EventArgs e)
@@ -142,6 +146,7 @@ namespace Modern_UI_audio_player
             openChildForm(new Form3());
             hideSubMenu();
             panelNowPlaying.Hide();
+            alreadyPlaying = false;
         }
 
         private void btnHelp_Click(object sender, EventArgs e)
@@ -149,6 +154,7 @@ namespace Modern_UI_audio_player
             openChildForm(new HelpForm());
             hideSubMenu();
             panelNowPlaying.Hide();
+            alreadyPlaying = false;
         }
 
         private Form activeForm = null;
@@ -176,48 +182,53 @@ namespace Modern_UI_audio_player
         {
             panelNowPlaying.Show();
             panelNowPlaying.BringToFront();
-           
+            alreadyPlaying = false;
+
         }
         public static string vis = "Visualisation";
         private void btnPlay_Click(object sender, EventArgs e)
         {
+           
             isStopped = false;
-            if (vis == "Visualisation")
-            openChildForm(new Visualisation());
-            if (vis == "Visualisation2")
-                openChildForm(new Visualisation2());
-            if (vis == "Visualisation3")
-                openChildForm(new Visualisation3());
-            if (vis == "Visualisation4")
-                openChildForm(new Visualisation4());
-            if (vis == "Visualisation5")
-                openChildForm(new Visualisation5());
-            if (vis == "Visualisation6")
-                openChildForm(new Visualisation6());
-            if (vis == "Visualisation7")
-                openChildForm(new Visualisation7());
-            if (vis == "Visualisation8")
-                openChildForm(new Visualisation8());
-            if (vis == "Visualisation9")
-                openChildForm(new Visualisation9());
-            if (vis == "Visualisation10")
-                openChildForm(new Visualisation10());
-            if (vis == "Visualisation11")
-                openChildForm(new Visualisation11());
-            if (vis == "Visualisation12")
-                openChildForm(new Visualisation12());
-            if (vis == "Visualisation13")
-                openChildForm(new Visualisation13());
-            if (vis == "Visualisation14")
-                openChildForm(new Visualisation14());
-            if (vis == "Visualisation15")
-                openChildForm(new Visualisation15());
-            if (vis == "Visualisation16")
-                openChildForm(new Visualisation16());
-
+            if (alreadyPlaying == false)
+            {
+                if (vis == "Visualisation")
+                    openChildForm(new Visualisation());
+                if (vis == "Visualisation2")
+                    openChildForm(new Visualisation2());
+                if (vis == "Visualisation3")
+                    openChildForm(new Visualisation3());
+                if (vis == "Visualisation4")
+                    openChildForm(new Visualisation4());
+                if (vis == "Visualisation5")
+                    openChildForm(new Visualisation5());
+                if (vis == "Visualisation6")
+                    openChildForm(new Visualisation6());
+                if (vis == "Visualisation7")
+                    openChildForm(new Visualisation7());
+                if (vis == "Visualisation8")
+                    openChildForm(new Visualisation8());
+                if (vis == "Visualisation9")
+                    openChildForm(new Visualisation9());
+                if (vis == "Visualisation10")
+                    openChildForm(new Visualisation10());
+                if (vis == "Visualisation11")
+                    openChildForm(new Visualisation11());
+                if (vis == "Visualisation12")
+                    openChildForm(new Visualisation12());
+                if (vis == "Visualisation13")
+                    openChildForm(new Visualisation13());
+                if (vis == "Visualisation14")
+                    openChildForm(new Visualisation14());
+                if (vis == "Visualisation15")
+                    openChildForm(new Visualisation15());
+                if (vis == "Visualisation16")
+                    openChildForm(new Visualisation16());
+            }
             axWindowsMediaPlayer1.Ctlcontrols.play();
             btnPause.Show();
             btnPlay.Hide();
+            alreadyPlaying = true;
         }
 
         
@@ -233,6 +244,7 @@ namespace Modern_UI_audio_player
             axWindowsMediaPlayer1.Ctlcontrols.stop();
             btnPause.Hide();
             btnPlay.Show();
+            alreadyPlaying = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -245,6 +257,7 @@ namespace Modern_UI_audio_player
             axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
             Thread.Sleep(10);
             axWindowsMediaPlayer1.Ctlcontrols.stop();
+            
 
         }
 
@@ -259,6 +272,30 @@ namespace Modern_UI_audio_player
             btnPause.Hide();
             btnPlay.Show();
 
+        }
+
+        private void btnNextSong_Click(object sender, EventArgs e)
+        {
+            if (btnPlay.Visible==true)
+            {
+                btnPause.Show();
+                btnPlay.Hide();
+
+            }
+            if ((listBoxSongs.SelectedIndex + 1) == maxsongs)
+            {
+                listBoxSongs.SelectedIndex = 0;
+                axWindowsMediaPlayer1.Ctlcontrols.stop();
+                axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
+                axWindowsMediaPlayer1.Ctlcontrols.play();
+            }
+            else
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.stop();
+                listBoxSongs.SelectedIndex++;
+                axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
+                axWindowsMediaPlayer1.Ctlcontrols.play();
+            }
         }
 
         private void btnAddToPlaylist_Click(object sender, EventArgs e)
@@ -277,6 +314,7 @@ namespace Modern_UI_audio_player
                 {
                     listBoxSongs.Items.Add(files[i]); //Display Songs in Listbox
                 }
+                maxsongs = listBoxSongs.Items.Count;
             }
         }
     }
