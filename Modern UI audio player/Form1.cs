@@ -276,6 +276,8 @@ namespace Modern_UI_audio_player
 
         private void btnNextSong_Click(object sender, EventArgs e)
         {
+            
+            
             if (btnPlay.Visible==true)
             {
                 btnPause.Show();
@@ -293,6 +295,31 @@ namespace Modern_UI_audio_player
             {
                 axWindowsMediaPlayer1.Ctlcontrols.stop();
                 listBoxSongs.SelectedIndex++;
+                axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
+                axWindowsMediaPlayer1.Ctlcontrols.play();
+            }
+        }
+
+        private void btnPreviousSong_Click(object sender, EventArgs e)
+        {
+           
+            if (btnPlay.Visible == true)
+            {
+                btnPause.Show();
+                btnPlay.Hide();
+
+            }
+            if (listBoxSongs.SelectedIndex == 0)
+            {
+                listBoxSongs.SelectedIndex = maxsongs-1;
+                axWindowsMediaPlayer1.Ctlcontrols.stop();
+                axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
+                axWindowsMediaPlayer1.Ctlcontrols.play();
+            }
+            else
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.stop();
+                listBoxSongs.SelectedIndex--;
                 axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
                 axWindowsMediaPlayer1.Ctlcontrols.play();
             }

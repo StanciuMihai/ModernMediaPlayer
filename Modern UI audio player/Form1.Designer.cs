@@ -578,6 +578,7 @@ namespace Modern_UI_audio_player
             this.btnPreviousSong.Size = new System.Drawing.Size(24, 24);
             this.btnPreviousSong.TabIndex = 24;
             this.btnPreviousSong.UseVisualStyleBackColor = true;
+            this.btnPreviousSong.Click += new System.EventHandler(this.btnPreviousSong_Click);
             // 
             // btnBrowse
             // 
