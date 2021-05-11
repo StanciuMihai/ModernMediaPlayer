@@ -77,6 +77,7 @@ namespace Modern_UI_audio_player
             this.btnAddToPlaylist = new System.Windows.Forms.Button();
             this.listBoxSongs = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panelSideMenu.SuspendLayout();
             this.panelToolsSubMenu.SuspendLayout();
             this.panelPlaylistSubMenu.SuspendLayout();
@@ -484,6 +485,7 @@ namespace Modern_UI_audio_player
             // panelPlayer
             // 
             this.panelPlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.panelPlayer.Controls.Add(this.panel6);
             this.panelPlayer.Controls.Add(this.btnPause);
             this.panelPlayer.Controls.Add(this.panel1);
             this.panelPlayer.Controls.Add(this.axWindowsMediaPlayer1);
@@ -767,6 +769,15 @@ namespace Modern_UI_audio_player
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // panel6
+            // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.Location = new System.Drawing.Point(58, 63);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(569, 10);
+            this.panel6.TabIndex = 28;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -853,6 +864,7 @@ namespace Modern_UI_audio_player
         private System.Windows.Forms.Button btnAddToPlaylist;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnPause;
+        private System.Windows.Forms.Panel panel6;
     }
 }
 
