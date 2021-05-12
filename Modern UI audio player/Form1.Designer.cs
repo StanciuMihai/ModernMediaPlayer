@@ -55,6 +55,7 @@ namespace Modern_UI_audio_player
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panelPlayer = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.btnPause = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
@@ -69,15 +70,14 @@ namespace Modern_UI_audio_player
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.panelNowPlaying = new System.Windows.Forms.Panel();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnAddToPlaylist = new System.Windows.Forms.Button();
             this.listBoxSongs = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.btnShuffle = new System.Windows.Forms.Button();
+            this.btnRepeat = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelToolsSubMenu.SuspendLayout();
             this.panelPlaylistSubMenu.SuspendLayout();
@@ -89,8 +89,6 @@ namespace Modern_UI_audio_player
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panelChildForm.SuspendLayout();
             this.panelNowPlaying.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -485,6 +483,8 @@ namespace Modern_UI_audio_player
             // panelPlayer
             // 
             this.panelPlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.panelPlayer.Controls.Add(this.btnRepeat);
+            this.panelPlayer.Controls.Add(this.btnShuffle);
             this.panelPlayer.Controls.Add(this.panel6);
             this.panelPlayer.Controls.Add(this.btnPause);
             this.panelPlayer.Controls.Add(this.panel1);
@@ -498,13 +498,20 @@ namespace Modern_UI_audio_player
             this.panelPlayer.Controls.Add(this.panel4);
             this.panelPlayer.Controls.Add(this.panel2);
             this.panelPlayer.Controls.Add(this.pictureBox8);
-            this.panelPlayer.Controls.Add(this.pictureBox6);
-            this.panelPlayer.Controls.Add(this.pictureBox5);
             this.panelPlayer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelPlayer.Location = new System.Drawing.Point(250, 431);
             this.panelPlayer.Name = "panelPlayer";
             this.panelPlayer.Size = new System.Drawing.Size(684, 130);
             this.panelPlayer.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.Location = new System.Drawing.Point(58, 63);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(569, 10);
+            this.panel6.TabIndex = 28;
             // 
             // btnPause
             // 
@@ -669,30 +676,6 @@ namespace Modern_UI_audio_player
             this.pictureBox8.TabIndex = 18;
             this.pictureBox8.TabStop = false;
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(128, 33);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox6.TabIndex = 16;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(358, 33);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox5.TabIndex = 15;
-            this.pictureBox5.TabStop = false;
-            // 
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
@@ -769,14 +752,31 @@ namespace Modern_UI_audio_player
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel6
+            // btnShuffle
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.Location = new System.Drawing.Point(58, 63);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(569, 10);
-            this.panel6.TabIndex = 28;
+            this.btnShuffle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnShuffle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShuffle.FlatAppearance.BorderSize = 0;
+            this.btnShuffle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShuffle.Image = ((System.Drawing.Image)(resources.GetObject("btnShuffle.Image")));
+            this.btnShuffle.Location = new System.Drawing.Point(128, 33);
+            this.btnShuffle.Name = "btnShuffle";
+            this.btnShuffle.Size = new System.Drawing.Size(24, 24);
+            this.btnShuffle.TabIndex = 29;
+            this.btnShuffle.UseVisualStyleBackColor = true;
+            // 
+            // btnRepeat
+            // 
+            this.btnRepeat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRepeat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRepeat.FlatAppearance.BorderSize = 0;
+            this.btnRepeat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRepeat.Image = ((System.Drawing.Image)(resources.GetObject("btnRepeat.Image")));
+            this.btnRepeat.Location = new System.Drawing.Point(358, 33);
+            this.btnRepeat.Name = "btnRepeat";
+            this.btnRepeat.Size = new System.Drawing.Size(24, 24);
+            this.btnRepeat.TabIndex = 30;
+            this.btnRepeat.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -805,8 +805,6 @@ namespace Modern_UI_audio_player
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
             this.panelNowPlaying.ResumeLayout(false);
@@ -849,8 +847,6 @@ namespace Modern_UI_audio_player
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Button btnBrowse;
@@ -865,6 +861,8 @@ namespace Modern_UI_audio_player
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnPause;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button btnRepeat;
+        private System.Windows.Forms.Button btnShuffle;
     }
 }
 
