@@ -14,7 +14,7 @@ namespace Modern_UI_audio_player
 {
     public partial class Form1 : Form
     {
-        //private Mp3Player mp3Player = new Mp3Player();
+        
         public Form1()
         {
             InitializeComponent();
@@ -328,7 +328,7 @@ namespace Modern_UI_audio_player
         private void btnAddToPlaylist_Click(object sender, EventArgs e)
         {
             listBoxSongs.Items.Clear();
-            //Code to SElect Songs
+            //Code to Select Songs
             OpenFileDialog ofd = new OpenFileDialog();
             //Code to select multiple files
             ofd.Multiselect = true;
