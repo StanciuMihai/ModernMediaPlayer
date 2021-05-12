@@ -34,8 +34,8 @@ namespace Modern_UI_audio_player
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +93,7 @@ namespace Modern_UI_audio_player
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(150, 40);
             this.button8.TabIndex = 22;
-            this.button8.Text = "button8";
+            this.button8.Text = "Reset";
             this.button8.UseVisualStyleBackColor = false;
             // 
             // button9
@@ -108,19 +108,8 @@ namespace Modern_UI_audio_player
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(150, 40);
             this.button9.TabIndex = 21;
-            this.button9.Text = "button9";
+            this.button9.Text = "Apply";
             this.button9.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(216, 90);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(433, 274);
-            this.dataGridView1.TabIndex = 20;
             // 
             // label1
             // 
@@ -133,6 +122,17 @@ namespace Modern_UI_audio_player
             this.label1.Size = new System.Drawing.Size(123, 25);
             this.label1.TabIndex = 19;
             this.label1.Text = "EQUALIZER";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(216, 90);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(433, 274);
+            this.dataGridView1.TabIndex = 20;
             // 
             // Form3
             // 
@@ -161,7 +161,7 @@ namespace Modern_UI_audio_player
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
