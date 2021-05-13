@@ -279,7 +279,10 @@ namespace Modern_UI_audio_player
         private void btnNextSong_Click(object sender, EventArgs e)
         {
             if (repeat == true)
-            { BeginInvoke(new Action(() => { axWindowsMediaPlayer1.Ctlcontrols.play(); })); }
+            {
+                axWindowsMediaPlayer1.Ctlcontrols.stop();
+                { BeginInvoke(new Action(() => { axWindowsMediaPlayer1.Ctlcontrols.play(); })); }
+            }
             else
             {
 
@@ -320,26 +323,33 @@ namespace Modern_UI_audio_player
 
         private void btnPreviousSong_Click(object sender, EventArgs e)
         {
-           
-            if (btnPlay.Visible == true)
+            if (repeat == true)
             {
-                btnPause.Show();
-                btnPlay.Hide();
-
-            }
-            if (listBoxSongs.SelectedIndex == 0)
-            {
-                listBoxSongs.SelectedIndex = maxsongs-1;
                 axWindowsMediaPlayer1.Ctlcontrols.stop();
-                axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
-                axWindowsMediaPlayer1.Ctlcontrols.play();
+                { BeginInvoke(new Action(() => { axWindowsMediaPlayer1.Ctlcontrols.play(); })); }
             }
             else
             {
-                axWindowsMediaPlayer1.Ctlcontrols.stop();
-                listBoxSongs.SelectedIndex--;
-                axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
-                axWindowsMediaPlayer1.Ctlcontrols.play();
+                if (btnPlay.Visible == true)
+                {
+                    btnPause.Show();
+                    btnPlay.Hide();
+
+                }
+                if (listBoxSongs.SelectedIndex == 0)
+                {
+                    listBoxSongs.SelectedIndex = maxsongs - 1;
+                    axWindowsMediaPlayer1.Ctlcontrols.stop();
+                    axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
+                    axWindowsMediaPlayer1.Ctlcontrols.play();
+                }
+                else
+                {
+                    axWindowsMediaPlayer1.Ctlcontrols.stop();
+                    listBoxSongs.SelectedIndex--;
+                    axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
+                    axWindowsMediaPlayer1.Ctlcontrols.play();
+                }
             }
         }
 
