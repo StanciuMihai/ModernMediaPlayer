@@ -278,27 +278,43 @@ namespace Modern_UI_audio_player
 
         private void btnNextSong_Click(object sender, EventArgs e)
         {
-            
-            
-            if (btnPlay.Visible==true)
-            {
-                btnPause.Show();
-                btnPlay.Hide();
-
-            }
-            if ((listBoxSongs.SelectedIndex + 1) == maxsongs)
-            {
-                listBoxSongs.SelectedIndex = 0;
-                axWindowsMediaPlayer1.Ctlcontrols.stop();
-                axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
-                axWindowsMediaPlayer1.Ctlcontrols.play();
-            }
+            if (repeat == true)
+            { BeginInvoke(new Action(() => { axWindowsMediaPlayer1.Ctlcontrols.play(); })); }
             else
             {
-                axWindowsMediaPlayer1.Ctlcontrols.stop();
-                listBoxSongs.SelectedIndex++;
-                axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
-                axWindowsMediaPlayer1.Ctlcontrols.play();
+
+                if (btnPlay.Visible == true)
+                {
+                    btnPause.Show();
+                    btnPlay.Hide();
+
+                }
+                if ((listBoxSongs.SelectedIndex + 1) == maxsongs)
+                {
+                    listBoxSongs.SelectedIndex = 0;
+                    if (shuffle == true)
+                    {
+                        Random r = new Random();
+                        listBoxSongs.SelectedIndex = r.Next(0, (maxsongs - 1));
+                    }
+                    axWindowsMediaPlayer1.Ctlcontrols.stop();
+                    axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
+                    BeginInvoke(new Action(() => { axWindowsMediaPlayer1.Ctlcontrols.play(); }));
+
+                }
+                else
+                {
+                    axWindowsMediaPlayer1.Ctlcontrols.stop();
+                    listBoxSongs.SelectedIndex++;
+                    if (shuffle == true)
+                    {
+                        Random r = new Random();
+                        listBoxSongs.SelectedIndex = r.Next(0, (maxsongs - 1));
+                    }
+                    axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
+                    BeginInvoke(new Action(() => { axWindowsMediaPlayer1.Ctlcontrols.play(); }));
+
+                }
             }
         }
 
@@ -353,8 +369,11 @@ namespace Modern_UI_audio_player
             //    }
             // }
             if (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
+            {
+
                 btnNextSong.PerformClick();
-        }
+            }
+            }
 
         private void btnAddToPlaylist_Click(object sender, EventArgs e)
         {
