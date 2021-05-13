@@ -298,7 +298,7 @@ namespace Modern_UI_audio_player
                     if (shuffle == true)
                     {
                         Random r = new Random();
-                        listBoxSongs.SelectedIndex = r.Next(0, (maxsongs - 1));
+                        listBoxSongs.SelectedIndex = r.Next(0, (maxsongs));
                     }
                     axWindowsMediaPlayer1.Ctlcontrols.stop();
                     axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
@@ -312,7 +312,7 @@ namespace Modern_UI_audio_player
                     if (shuffle == true)
                     {
                         Random r = new Random();
-                        listBoxSongs.SelectedIndex = r.Next(0, (maxsongs - 1));
+                        listBoxSongs.SelectedIndex = r.Next(0, (maxsongs));
                     }
                     axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
                     BeginInvoke(new Action(() => { axWindowsMediaPlayer1.Ctlcontrols.play(); }));
