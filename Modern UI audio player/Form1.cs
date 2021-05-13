@@ -24,6 +24,8 @@ namespace Modern_UI_audio_player
         public static System.Windows.Forms.TextBox txtSong = new TextBox();
         bool isStopped = true;
         bool alreadyPlaying = false;
+        bool repeat = false;
+        bool shuffle = false;
         public int maxsongs;
         private void customizeDesign()
         {
@@ -323,6 +325,35 @@ namespace Modern_UI_audio_player
                 axWindowsMediaPlayer1.URL = paths[listBoxSongs.SelectedIndex];
                 axWindowsMediaPlayer1.Ctlcontrols.play();
             }
+        }
+
+        private void btnShuffle_Click(object sender, EventArgs e)
+        {
+            shuffle = true;
+            btnShuffle.Hide();
+        }
+
+        private void btnRepeat_Click(object sender, EventArgs e)
+        {
+            repeat = true;
+            btnRepeat.Hide();
+        }
+
+        private void axWindowsMediaPlayer1_PlayStateChange(object sender, _WMPOCXEvents_PlayStateChangeEvent e)
+        {
+            //if ((e.newState == 1) && (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsMediaEnded))
+            //{
+            //    if (listBoxSongs.SelectedIndex != listBoxSongs.Items.Count - 1)
+            //    {
+            //        BeginInvoke(new Action(() => {
+            //            listBoxSongs.SelectedIndex = listBoxSongs.SelectedIndex + 1;
+            //            axWindowsMediaPlayer1.Ctlcontrols.play();
+            //        }));
+            //        
+            //    }
+            // }
+            if (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
+                btnNextSong.PerformClick();
         }
 
         private void btnAddToPlaylist_Click(object sender, EventArgs e)

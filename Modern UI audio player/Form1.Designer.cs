@@ -55,6 +55,8 @@ namespace Modern_UI_audio_player
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panelPlayer = new System.Windows.Forms.Panel();
+            this.btnRepeat = new System.Windows.Forms.Button();
+            this.btnShuffle = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnPause = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -76,8 +78,6 @@ namespace Modern_UI_audio_player
             this.btnAddToPlaylist = new System.Windows.Forms.Button();
             this.listBoxSongs = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnShuffle = new System.Windows.Forms.Button();
-            this.btnRepeat = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelToolsSubMenu.SuspendLayout();
             this.panelPlaylistSubMenu.SuspendLayout();
@@ -504,6 +504,34 @@ namespace Modern_UI_audio_player
             this.panelPlayer.Size = new System.Drawing.Size(684, 130);
             this.panelPlayer.TabIndex = 1;
             // 
+            // btnRepeat
+            // 
+            this.btnRepeat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRepeat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRepeat.FlatAppearance.BorderSize = 0;
+            this.btnRepeat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRepeat.Image = ((System.Drawing.Image)(resources.GetObject("btnRepeat.Image")));
+            this.btnRepeat.Location = new System.Drawing.Point(358, 33);
+            this.btnRepeat.Name = "btnRepeat";
+            this.btnRepeat.Size = new System.Drawing.Size(24, 24);
+            this.btnRepeat.TabIndex = 30;
+            this.btnRepeat.UseVisualStyleBackColor = true;
+            this.btnRepeat.Click += new System.EventHandler(this.btnRepeat_Click);
+            // 
+            // btnShuffle
+            // 
+            this.btnShuffle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnShuffle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShuffle.FlatAppearance.BorderSize = 0;
+            this.btnShuffle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShuffle.Image = ((System.Drawing.Image)(resources.GetObject("btnShuffle.Image")));
+            this.btnShuffle.Location = new System.Drawing.Point(128, 33);
+            this.btnShuffle.Name = "btnShuffle";
+            this.btnShuffle.Size = new System.Drawing.Size(24, 24);
+            this.btnShuffle.TabIndex = 29;
+            this.btnShuffle.UseVisualStyleBackColor = true;
+            this.btnShuffle.Click += new System.EventHandler(this.btnShuffle_Click);
+            // 
             // panel6
             // 
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -546,6 +574,7 @@ namespace Modern_UI_audio_player
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(564, 65);
             this.axWindowsMediaPlayer1.TabIndex = 1;
+            this.axWindowsMediaPlayer1.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.axWindowsMediaPlayer1_PlayStateChange);
             // 
             // btnStop
             // 
@@ -751,32 +780,6 @@ namespace Modern_UI_audio_player
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnShuffle
-            // 
-            this.btnShuffle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnShuffle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnShuffle.FlatAppearance.BorderSize = 0;
-            this.btnShuffle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShuffle.Image = ((System.Drawing.Image)(resources.GetObject("btnShuffle.Image")));
-            this.btnShuffle.Location = new System.Drawing.Point(128, 33);
-            this.btnShuffle.Name = "btnShuffle";
-            this.btnShuffle.Size = new System.Drawing.Size(24, 24);
-            this.btnShuffle.TabIndex = 29;
-            this.btnShuffle.UseVisualStyleBackColor = true;
-            // 
-            // btnRepeat
-            // 
-            this.btnRepeat.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnRepeat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRepeat.FlatAppearance.BorderSize = 0;
-            this.btnRepeat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRepeat.Image = ((System.Drawing.Image)(resources.GetObject("btnRepeat.Image")));
-            this.btnRepeat.Location = new System.Drawing.Point(358, 33);
-            this.btnRepeat.Name = "btnRepeat";
-            this.btnRepeat.Size = new System.Drawing.Size(24, 24);
-            this.btnRepeat.TabIndex = 30;
-            this.btnRepeat.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
