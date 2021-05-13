@@ -78,6 +78,8 @@ namespace Modern_UI_audio_player
             this.btnAddToPlaylist = new System.Windows.Forms.Button();
             this.listBoxSongs = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCancelShuffle = new System.Windows.Forms.Button();
+            this.btnCancelRepeat = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelToolsSubMenu.SuspendLayout();
             this.panelPlaylistSubMenu.SuspendLayout();
@@ -498,6 +500,8 @@ namespace Modern_UI_audio_player
             this.panelPlayer.Controls.Add(this.panel4);
             this.panelPlayer.Controls.Add(this.panel2);
             this.panelPlayer.Controls.Add(this.pictureBox8);
+            this.panelPlayer.Controls.Add(this.btnCancelRepeat);
+            this.panelPlayer.Controls.Add(this.btnCancelShuffle);
             this.panelPlayer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelPlayer.Location = new System.Drawing.Point(250, 431);
             this.panelPlayer.Name = "panelPlayer";
@@ -781,6 +785,36 @@ namespace Modern_UI_audio_player
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnCancelShuffle
+            // 
+            this.btnCancelShuffle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancelShuffle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelShuffle.FlatAppearance.BorderSize = 0;
+            this.btnCancelShuffle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelShuffle.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelShuffle.Image")));
+            this.btnCancelShuffle.Location = new System.Drawing.Point(128, 33);
+            this.btnCancelShuffle.Name = "btnCancelShuffle";
+            this.btnCancelShuffle.Size = new System.Drawing.Size(24, 24);
+            this.btnCancelShuffle.TabIndex = 31;
+            this.btnCancelShuffle.UseVisualStyleBackColor = true;
+            this.btnCancelShuffle.Visible = false;
+            this.btnCancelShuffle.Click += new System.EventHandler(this.btnCancelShuffle_Click);
+            // 
+            // btnCancelRepeat
+            // 
+            this.btnCancelRepeat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancelRepeat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelRepeat.FlatAppearance.BorderSize = 0;
+            this.btnCancelRepeat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelRepeat.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelRepeat.Image")));
+            this.btnCancelRepeat.Location = new System.Drawing.Point(358, 33);
+            this.btnCancelRepeat.Name = "btnCancelRepeat";
+            this.btnCancelRepeat.Size = new System.Drawing.Size(24, 24);
+            this.btnCancelRepeat.TabIndex = 32;
+            this.btnCancelRepeat.UseVisualStyleBackColor = true;
+            this.btnCancelRepeat.Visible = false;
+            this.btnCancelRepeat.Click += new System.EventHandler(this.btnCancelRepeat_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -866,6 +900,8 @@ namespace Modern_UI_audio_player
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnRepeat;
         private System.Windows.Forms.Button btnShuffle;
+        private System.Windows.Forms.Button btnCancelRepeat;
+        private System.Windows.Forms.Button btnCancelShuffle;
     }
 }
 

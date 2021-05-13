@@ -357,12 +357,14 @@ namespace Modern_UI_audio_player
         {
             shuffle = true;
             btnShuffle.Hide();
+            btnCancelShuffle.Show();
         }
 
         private void btnRepeat_Click(object sender, EventArgs e)
         {
             repeat = true;
             btnRepeat.Hide();
+            btnCancelRepeat.Show();
         }
 
         private void axWindowsMediaPlayer1_PlayStateChange(object sender, _WMPOCXEvents_PlayStateChangeEvent e)
@@ -384,6 +386,20 @@ namespace Modern_UI_audio_player
                 btnNextSong.PerformClick();
             }
             }
+
+        private void btnCancelShuffle_Click(object sender, EventArgs e)
+        {
+            shuffle = false;
+            btnCancelShuffle.Hide();
+            btnShuffle.Show();
+        }
+
+        private void btnCancelRepeat_Click(object sender, EventArgs e)
+        {
+            repeat = false;
+            btnCancelRepeat.Hide();
+            btnRepeat.Show();
+        }
 
         private void btnAddToPlaylist_Click(object sender, EventArgs e)
         {
