@@ -67,19 +67,21 @@ namespace Modern_UI_audio_player
             this.btnBrowse = new System.Windows.Forms.Button();
             this.btnPlay = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panelVolumeZero = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.btnCancelRepeat = new System.Windows.Forms.Button();
+            this.btnCancelShuffle = new System.Windows.Forms.Button();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.panelNowPlaying = new System.Windows.Forms.Panel();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnAddToPlaylist = new System.Windows.Forms.Button();
             this.listBoxSongs = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCancelShuffle = new System.Windows.Forms.Button();
-            this.btnCancelRepeat = new System.Windows.Forms.Button();
+            this.panelVolumeFull = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panelSideMenu.SuspendLayout();
             this.panelToolsSubMenu.SuspendLayout();
             this.panelPlaylistSubMenu.SuspendLayout();
@@ -88,12 +90,13 @@ namespace Modern_UI_audio_player
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panelPlayer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.panelVolumeZero.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panelChildForm.SuspendLayout();
             this.panelNowPlaying.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelVolumeFull.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -485,6 +488,7 @@ namespace Modern_UI_audio_player
             // panelPlayer
             // 
             this.panelPlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.panelPlayer.Controls.Add(this.panelVolumeFull);
             this.panelPlayer.Controls.Add(this.btnRepeat);
             this.panelPlayer.Controls.Add(this.btnShuffle);
             this.panelPlayer.Controls.Add(this.panel6);
@@ -497,7 +501,7 @@ namespace Modern_UI_audio_player
             this.panelPlayer.Controls.Add(this.btnBrowse);
             this.panelPlayer.Controls.Add(this.btnPlay);
             this.panelPlayer.Controls.Add(this.label3);
-            this.panelPlayer.Controls.Add(this.panel4);
+            this.panelPlayer.Controls.Add(this.panelVolumeZero);
             this.panelPlayer.Controls.Add(this.panel2);
             this.panelPlayer.Controls.Add(this.pictureBox8);
             this.panelPlayer.Controls.Add(this.btnCancelRepeat);
@@ -657,19 +661,19 @@ namespace Modern_UI_audio_player
             this.label3.ForeColor = System.Drawing.Color.LightGray;
             this.label3.Location = new System.Drawing.Point(633, 36);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 17);
+            this.label3.Size = new System.Drawing.Size(44, 17);
             this.label3.TabIndex = 23;
-            this.label3.Text = "0%";
+            this.label3.Text = "100%";
             // 
-            // panel4
+            // panelVolumeZero
             // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(33)))), ((int)(((byte)(50)))));
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(427, 42);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 5);
-            this.panel4.TabIndex = 21;
+            this.panelVolumeZero.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelVolumeZero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
+            this.panelVolumeZero.Controls.Add(this.panel5);
+            this.panelVolumeZero.Location = new System.Drawing.Point(427, 42);
+            this.panelVolumeZero.Name = "panelVolumeZero";
+            this.panelVolumeZero.Size = new System.Drawing.Size(200, 5);
+            this.panelVolumeZero.TabIndex = 21;
             // 
             // panel5
             // 
@@ -708,6 +712,36 @@ namespace Modern_UI_audio_player
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox8.TabIndex = 18;
             this.pictureBox8.TabStop = false;
+            // 
+            // btnCancelRepeat
+            // 
+            this.btnCancelRepeat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancelRepeat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelRepeat.FlatAppearance.BorderSize = 0;
+            this.btnCancelRepeat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelRepeat.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelRepeat.Image")));
+            this.btnCancelRepeat.Location = new System.Drawing.Point(358, 33);
+            this.btnCancelRepeat.Name = "btnCancelRepeat";
+            this.btnCancelRepeat.Size = new System.Drawing.Size(24, 24);
+            this.btnCancelRepeat.TabIndex = 32;
+            this.btnCancelRepeat.UseVisualStyleBackColor = true;
+            this.btnCancelRepeat.Visible = false;
+            this.btnCancelRepeat.Click += new System.EventHandler(this.btnCancelRepeat_Click);
+            // 
+            // btnCancelShuffle
+            // 
+            this.btnCancelShuffle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancelShuffle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelShuffle.FlatAppearance.BorderSize = 0;
+            this.btnCancelShuffle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelShuffle.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelShuffle.Image")));
+            this.btnCancelShuffle.Location = new System.Drawing.Point(128, 33);
+            this.btnCancelShuffle.Name = "btnCancelShuffle";
+            this.btnCancelShuffle.Size = new System.Drawing.Size(24, 24);
+            this.btnCancelShuffle.TabIndex = 31;
+            this.btnCancelShuffle.UseVisualStyleBackColor = true;
+            this.btnCancelShuffle.Visible = false;
+            this.btnCancelShuffle.Click += new System.EventHandler(this.btnCancelShuffle_Click);
             // 
             // panelChildForm
             // 
@@ -785,35 +819,23 @@ namespace Modern_UI_audio_player
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnCancelShuffle
+            // panelVolumeFull
             // 
-            this.btnCancelShuffle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCancelShuffle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelShuffle.FlatAppearance.BorderSize = 0;
-            this.btnCancelShuffle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelShuffle.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelShuffle.Image")));
-            this.btnCancelShuffle.Location = new System.Drawing.Point(128, 33);
-            this.btnCancelShuffle.Name = "btnCancelShuffle";
-            this.btnCancelShuffle.Size = new System.Drawing.Size(24, 24);
-            this.btnCancelShuffle.TabIndex = 31;
-            this.btnCancelShuffle.UseVisualStyleBackColor = true;
-            this.btnCancelShuffle.Visible = false;
-            this.btnCancelShuffle.Click += new System.EventHandler(this.btnCancelShuffle_Click);
+            this.panelVolumeFull.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelVolumeFull.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(33)))), ((int)(((byte)(50)))));
+            this.panelVolumeFull.Controls.Add(this.panel7);
+            this.panelVolumeFull.Location = new System.Drawing.Point(427, 42);
+            this.panelVolumeFull.Name = "panelVolumeFull";
+            this.panelVolumeFull.Size = new System.Drawing.Size(200, 5);
+            this.panelVolumeFull.TabIndex = 22;
             // 
-            // btnCancelRepeat
+            // panel7
             // 
-            this.btnCancelRepeat.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCancelRepeat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelRepeat.FlatAppearance.BorderSize = 0;
-            this.btnCancelRepeat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelRepeat.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelRepeat.Image")));
-            this.btnCancelRepeat.Location = new System.Drawing.Point(358, 33);
-            this.btnCancelRepeat.Name = "btnCancelRepeat";
-            this.btnCancelRepeat.Size = new System.Drawing.Size(24, 24);
-            this.btnCancelRepeat.TabIndex = 32;
-            this.btnCancelRepeat.UseVisualStyleBackColor = true;
-            this.btnCancelRepeat.Visible = false;
-            this.btnCancelRepeat.Click += new System.EventHandler(this.btnCancelRepeat_Click);
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(33)))), ((int)(((byte)(50)))));
+            this.panel7.Location = new System.Drawing.Point(0, -13);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(564, 5);
+            this.panel7.TabIndex = 9;
             // 
             // Form1
             // 
@@ -839,13 +861,14 @@ namespace Modern_UI_audio_player
             this.panelPlayer.ResumeLayout(false);
             this.panelPlayer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
-            this.panel4.ResumeLayout(false);
+            this.panelVolumeZero.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
             this.panelNowPlaying.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelVolumeFull.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -879,7 +902,7 @@ namespace Modern_UI_audio_player
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panelVolumeZero;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
@@ -902,6 +925,8 @@ namespace Modern_UI_audio_player
         private System.Windows.Forms.Button btnShuffle;
         private System.Windows.Forms.Button btnCancelRepeat;
         private System.Windows.Forms.Button btnCancelShuffle;
+        private System.Windows.Forms.Panel panelVolumeFull;
+        private System.Windows.Forms.Panel panel7;
     }
 }
 
