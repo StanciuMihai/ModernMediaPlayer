@@ -401,6 +401,16 @@ namespace Modern_UI_audio_player
             btnRepeat.Show();
         }
 
+        private void btnVolumeZero_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVolumeFull_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnAddToPlaylist_Click(object sender, EventArgs e)
         {
             listBoxSongs.Items.Clear();

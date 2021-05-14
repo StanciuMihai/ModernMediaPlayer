@@ -71,7 +71,6 @@ namespace Modern_UI_audio_player
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btnCancelRepeat = new System.Windows.Forms.Button();
             this.btnCancelShuffle = new System.Windows.Forms.Button();
             this.panelChildForm = new System.Windows.Forms.Panel();
@@ -82,6 +81,8 @@ namespace Modern_UI_audio_player
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelVolumeFull = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btnVolumeZero = new System.Windows.Forms.Button();
+            this.btnVolumeFull = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelToolsSubMenu.SuspendLayout();
             this.panelPlaylistSubMenu.SuspendLayout();
@@ -92,7 +93,6 @@ namespace Modern_UI_audio_player
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.panelVolumeZero.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panelChildForm.SuspendLayout();
             this.panelNowPlaying.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -503,9 +503,10 @@ namespace Modern_UI_audio_player
             this.panelPlayer.Controls.Add(this.label3);
             this.panelPlayer.Controls.Add(this.panelVolumeZero);
             this.panelPlayer.Controls.Add(this.panel2);
-            this.panelPlayer.Controls.Add(this.pictureBox8);
             this.panelPlayer.Controls.Add(this.btnCancelRepeat);
             this.panelPlayer.Controls.Add(this.btnCancelShuffle);
+            this.panelPlayer.Controls.Add(this.btnVolumeFull);
+            this.panelPlayer.Controls.Add(this.btnVolumeZero);
             this.panelPlayer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelPlayer.Location = new System.Drawing.Point(250, 431);
             this.panelPlayer.Name = "panelPlayer";
@@ -702,17 +703,6 @@ namespace Modern_UI_audio_player
             this.panel3.Size = new System.Drawing.Size(564, 5);
             this.panel3.TabIndex = 9;
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(397, 33);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox8.TabIndex = 18;
-            this.pictureBox8.TabStop = false;
-            // 
             // btnCancelRepeat
             // 
             this.btnCancelRepeat.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -837,6 +827,34 @@ namespace Modern_UI_audio_player
             this.panel7.Size = new System.Drawing.Size(564, 5);
             this.panel7.TabIndex = 9;
             // 
+            // btnVolumeZero
+            // 
+            this.btnVolumeZero.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnVolumeZero.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVolumeZero.FlatAppearance.BorderSize = 0;
+            this.btnVolumeZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolumeZero.Image = ((System.Drawing.Image)(resources.GetObject("btnVolumeZero.Image")));
+            this.btnVolumeZero.Location = new System.Drawing.Point(395, 33);
+            this.btnVolumeZero.Name = "btnVolumeZero";
+            this.btnVolumeZero.Size = new System.Drawing.Size(24, 24);
+            this.btnVolumeZero.TabIndex = 33;
+            this.btnVolumeZero.UseVisualStyleBackColor = true;
+            this.btnVolumeZero.Click += new System.EventHandler(this.btnVolumeZero_Click);
+            // 
+            // btnVolumeFull
+            // 
+            this.btnVolumeFull.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnVolumeFull.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVolumeFull.FlatAppearance.BorderSize = 0;
+            this.btnVolumeFull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolumeFull.Image = ((System.Drawing.Image)(resources.GetObject("btnVolumeFull.Image")));
+            this.btnVolumeFull.Location = new System.Drawing.Point(395, 33);
+            this.btnVolumeFull.Name = "btnVolumeFull";
+            this.btnVolumeFull.Size = new System.Drawing.Size(24, 24);
+            this.btnVolumeFull.TabIndex = 34;
+            this.btnVolumeFull.UseVisualStyleBackColor = true;
+            this.btnVolumeFull.Click += new System.EventHandler(this.btnVolumeFull_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -863,7 +881,6 @@ namespace Modern_UI_audio_player
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.panelVolumeZero.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
             this.panelNowPlaying.ResumeLayout(false);
@@ -906,7 +923,6 @@ namespace Modern_UI_audio_player
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Button btnBrowse;
@@ -927,6 +943,8 @@ namespace Modern_UI_audio_player
         private System.Windows.Forms.Button btnCancelShuffle;
         private System.Windows.Forms.Panel panelVolumeFull;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button btnVolumeZero;
+        private System.Windows.Forms.Button btnVolumeFull;
     }
 }
 
