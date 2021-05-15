@@ -408,6 +408,7 @@ namespace Modern_UI_audio_player
             panelVolumeFull.Show();
             panelVolumeZero.Hide();
             lblVolume.Text = "100%";
+            axWindowsMediaPlayer1.settings.volume = 100;
         }
 
         private void btnVolumeFull_Click(object sender, EventArgs e)
@@ -417,6 +418,7 @@ namespace Modern_UI_audio_player
             panelVolumeFull.Hide();
             panelVolumeZero.Show();
             lblVolume.Text = "0%";
+            axWindowsMediaPlayer1.settings.volume = 100;
         }
 
         private void btnAddToPlaylist_Click(object sender, EventArgs e)
