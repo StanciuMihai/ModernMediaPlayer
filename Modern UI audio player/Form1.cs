@@ -403,12 +403,20 @@ namespace Modern_UI_audio_player
 
         private void btnVolumeZero_Click(object sender, EventArgs e)
         {
-
+            btnVolumeFull.Show();
+            btnVolumeZero.Hide();
+            panelVolumeFull.Show();
+            panelVolumeZero.Hide();
+            lblVolume.Text = "100%";
         }
 
         private void btnVolumeFull_Click(object sender, EventArgs e)
         {
-
+            btnVolumeFull.Hide();
+            btnVolumeZero.Show();
+            panelVolumeFull.Hide();
+            panelVolumeZero.Show();
+            lblVolume.Text = "0%";
         }
 
         private void btnAddToPlaylist_Click(object sender, EventArgs e)

@@ -55,6 +55,8 @@ namespace Modern_UI_audio_player
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panelPlayer = new System.Windows.Forms.Panel();
+            this.panelVolumeFull = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.btnRepeat = new System.Windows.Forms.Button();
             this.btnShuffle = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -66,23 +68,21 @@ namespace Modern_UI_audio_player
             this.btnPreviousSong = new System.Windows.Forms.Button();
             this.btnBrowse = new System.Windows.Forms.Button();
             this.btnPlay = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblVolume = new System.Windows.Forms.Label();
             this.panelVolumeZero = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnCancelRepeat = new System.Windows.Forms.Button();
             this.btnCancelShuffle = new System.Windows.Forms.Button();
+            this.btnVolumeFull = new System.Windows.Forms.Button();
+            this.btnVolumeZero = new System.Windows.Forms.Button();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.panelNowPlaying = new System.Windows.Forms.Panel();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnAddToPlaylist = new System.Windows.Forms.Button();
             this.listBoxSongs = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelVolumeFull = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnVolumeZero = new System.Windows.Forms.Button();
-            this.btnVolumeFull = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelToolsSubMenu.SuspendLayout();
             this.panelPlaylistSubMenu.SuspendLayout();
@@ -90,13 +90,13 @@ namespace Modern_UI_audio_player
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panelPlayer.SuspendLayout();
+            this.panelVolumeFull.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.panelVolumeZero.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelChildForm.SuspendLayout();
             this.panelNowPlaying.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelVolumeFull.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -500,7 +500,7 @@ namespace Modern_UI_audio_player
             this.panelPlayer.Controls.Add(this.btnPreviousSong);
             this.panelPlayer.Controls.Add(this.btnBrowse);
             this.panelPlayer.Controls.Add(this.btnPlay);
-            this.panelPlayer.Controls.Add(this.label3);
+            this.panelPlayer.Controls.Add(this.lblVolume);
             this.panelPlayer.Controls.Add(this.panelVolumeZero);
             this.panelPlayer.Controls.Add(this.panel2);
             this.panelPlayer.Controls.Add(this.btnCancelRepeat);
@@ -512,6 +512,24 @@ namespace Modern_UI_audio_player
             this.panelPlayer.Name = "panelPlayer";
             this.panelPlayer.Size = new System.Drawing.Size(684, 130);
             this.panelPlayer.TabIndex = 1;
+            // 
+            // panelVolumeFull
+            // 
+            this.panelVolumeFull.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelVolumeFull.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(33)))), ((int)(((byte)(50)))));
+            this.panelVolumeFull.Controls.Add(this.panel7);
+            this.panelVolumeFull.Location = new System.Drawing.Point(427, 42);
+            this.panelVolumeFull.Name = "panelVolumeFull";
+            this.panelVolumeFull.Size = new System.Drawing.Size(200, 5);
+            this.panelVolumeFull.TabIndex = 22;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(33)))), ((int)(((byte)(50)))));
+            this.panel7.Location = new System.Drawing.Point(0, -13);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(564, 5);
+            this.panel7.TabIndex = 9;
             // 
             // btnRepeat
             // 
@@ -655,16 +673,16 @@ namespace Modern_UI_audio_player
             this.btnPlay.UseVisualStyleBackColor = true;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
-            // label3
+            // lblVolume
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.LightGray;
-            this.label3.Location = new System.Drawing.Point(633, 36);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 17);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "100%";
+            this.lblVolume.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblVolume.AutoSize = true;
+            this.lblVolume.ForeColor = System.Drawing.Color.LightGray;
+            this.lblVolume.Location = new System.Drawing.Point(633, 36);
+            this.lblVolume.Name = "lblVolume";
+            this.lblVolume.Size = new System.Drawing.Size(44, 17);
+            this.lblVolume.TabIndex = 23;
+            this.lblVolume.Text = "100%";
             // 
             // panelVolumeZero
             // 
@@ -732,6 +750,34 @@ namespace Modern_UI_audio_player
             this.btnCancelShuffle.UseVisualStyleBackColor = true;
             this.btnCancelShuffle.Visible = false;
             this.btnCancelShuffle.Click += new System.EventHandler(this.btnCancelShuffle_Click);
+            // 
+            // btnVolumeFull
+            // 
+            this.btnVolumeFull.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnVolumeFull.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVolumeFull.FlatAppearance.BorderSize = 0;
+            this.btnVolumeFull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolumeFull.Image = ((System.Drawing.Image)(resources.GetObject("btnVolumeFull.Image")));
+            this.btnVolumeFull.Location = new System.Drawing.Point(395, 33);
+            this.btnVolumeFull.Name = "btnVolumeFull";
+            this.btnVolumeFull.Size = new System.Drawing.Size(24, 24);
+            this.btnVolumeFull.TabIndex = 34;
+            this.btnVolumeFull.UseVisualStyleBackColor = true;
+            this.btnVolumeFull.Click += new System.EventHandler(this.btnVolumeFull_Click);
+            // 
+            // btnVolumeZero
+            // 
+            this.btnVolumeZero.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnVolumeZero.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVolumeZero.FlatAppearance.BorderSize = 0;
+            this.btnVolumeZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolumeZero.Image = ((System.Drawing.Image)(resources.GetObject("btnVolumeZero.Image")));
+            this.btnVolumeZero.Location = new System.Drawing.Point(395, 33);
+            this.btnVolumeZero.Name = "btnVolumeZero";
+            this.btnVolumeZero.Size = new System.Drawing.Size(24, 24);
+            this.btnVolumeZero.TabIndex = 33;
+            this.btnVolumeZero.UseVisualStyleBackColor = true;
+            this.btnVolumeZero.Click += new System.EventHandler(this.btnVolumeZero_Click);
             // 
             // panelChildForm
             // 
@@ -809,52 +855,6 @@ namespace Modern_UI_audio_player
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panelVolumeFull
-            // 
-            this.panelVolumeFull.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panelVolumeFull.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(33)))), ((int)(((byte)(50)))));
-            this.panelVolumeFull.Controls.Add(this.panel7);
-            this.panelVolumeFull.Location = new System.Drawing.Point(427, 42);
-            this.panelVolumeFull.Name = "panelVolumeFull";
-            this.panelVolumeFull.Size = new System.Drawing.Size(200, 5);
-            this.panelVolumeFull.TabIndex = 22;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(33)))), ((int)(((byte)(50)))));
-            this.panel7.Location = new System.Drawing.Point(0, -13);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(564, 5);
-            this.panel7.TabIndex = 9;
-            // 
-            // btnVolumeZero
-            // 
-            this.btnVolumeZero.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnVolumeZero.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVolumeZero.FlatAppearance.BorderSize = 0;
-            this.btnVolumeZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolumeZero.Image = ((System.Drawing.Image)(resources.GetObject("btnVolumeZero.Image")));
-            this.btnVolumeZero.Location = new System.Drawing.Point(395, 33);
-            this.btnVolumeZero.Name = "btnVolumeZero";
-            this.btnVolumeZero.Size = new System.Drawing.Size(24, 24);
-            this.btnVolumeZero.TabIndex = 33;
-            this.btnVolumeZero.UseVisualStyleBackColor = true;
-            this.btnVolumeZero.Click += new System.EventHandler(this.btnVolumeZero_Click);
-            // 
-            // btnVolumeFull
-            // 
-            this.btnVolumeFull.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnVolumeFull.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVolumeFull.FlatAppearance.BorderSize = 0;
-            this.btnVolumeFull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolumeFull.Image = ((System.Drawing.Image)(resources.GetObject("btnVolumeFull.Image")));
-            this.btnVolumeFull.Location = new System.Drawing.Point(395, 33);
-            this.btnVolumeFull.Name = "btnVolumeFull";
-            this.btnVolumeFull.Size = new System.Drawing.Size(24, 24);
-            this.btnVolumeFull.TabIndex = 34;
-            this.btnVolumeFull.UseVisualStyleBackColor = true;
-            this.btnVolumeFull.Click += new System.EventHandler(this.btnVolumeFull_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -878,6 +878,7 @@ namespace Modern_UI_audio_player
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.panelPlayer.ResumeLayout(false);
             this.panelPlayer.PerformLayout();
+            this.panelVolumeFull.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.panelVolumeZero.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -885,7 +886,6 @@ namespace Modern_UI_audio_player
             this.panelChildForm.PerformLayout();
             this.panelNowPlaying.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelVolumeFull.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -918,7 +918,7 @@ namespace Modern_UI_audio_player
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblVolume;
         private System.Windows.Forms.Panel panelVolumeZero;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel2;
