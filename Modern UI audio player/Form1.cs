@@ -252,6 +252,7 @@ namespace Modern_UI_audio_player
         private void Form1_Load(object sender, EventArgs e)
         {
             panelNowPlaying.Hide();
+            axWindowsMediaPlayer1.settings.volume = 100;
         }
 
         private void listBoxSongs_SelectedIndexChanged(object sender, EventArgs e)
@@ -418,7 +419,7 @@ namespace Modern_UI_audio_player
             panelVolumeFull.Hide();
             panelVolumeZero.Show();
             lblVolume.Text = "0%";
-            axWindowsMediaPlayer1.settings.volume = 100;
+            axWindowsMediaPlayer1.settings.volume = 0;
         }
 
         private void btnAddToPlaylist_Click(object sender, EventArgs e)
