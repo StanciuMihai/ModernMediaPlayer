@@ -64,7 +64,7 @@ namespace Modern_UI_audio_player
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(150, 40);
             this.button6.TabIndex = 24;
-            this.button6.Text = "button6";
+            this.button6.Text = "Enable";
             this.button6.UseVisualStyleBackColor = false;
             // 
             // button7
@@ -78,7 +78,7 @@ namespace Modern_UI_audio_player
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(150, 40);
             this.button7.TabIndex = 23;
-            this.button7.Text = "button7";
+            this.button7.Text = "Disable";
             this.button7.UseVisualStyleBackColor = false;
             // 
             // button8
