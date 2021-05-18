@@ -803,6 +803,7 @@ namespace Modern_UI_audio_player
             // 
             // btnClear
             // 
+            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -818,6 +819,7 @@ namespace Modern_UI_audio_player
             // 
             // btnAddToPlaylist
             // 
+            this.btnAddToPlaylist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddToPlaylist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
             this.btnAddToPlaylist.FlatAppearance.BorderSize = 0;
             this.btnAddToPlaylist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -833,6 +835,7 @@ namespace Modern_UI_audio_player
             // 
             // listBoxSongs
             // 
+            this.listBoxSongs.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.listBoxSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
             this.listBoxSongs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxSongs.ForeColor = System.Drawing.Color.White;
