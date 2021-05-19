@@ -421,7 +421,7 @@ namespace Modern_UI_audio_player
             lblVolume.Text = "0%";
             axWindowsMediaPlayer1.settings.volume = 0;
         }
-
+        string[] songextensions = { ".mp3", ".wav", ".wma", ".flac", ".ogg", ".aac", ".m4a" };
         private void btnAddToPlaylist_Click(object sender, EventArgs e)
         {
             listBoxSongs.Items.Clear();
