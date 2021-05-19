@@ -248,11 +248,19 @@ namespace Modern_UI_audio_player
             btnPlay.Show();
             alreadyPlaying = false;
         }
-
+        string[] fileextensions = { ".pdf" };
+        string[] supportedfiles;
+        string alltypes = "All Supported Formats|";
         private void Form1_Load(object sender, EventArgs e)
         {
             panelNowPlaying.Hide();
             axWindowsMediaPlayer1.settings.volume = 100;
+            supportedfiles = songextensions.Concat(fileextensions).ToArray();
+            foreach (string ftype in supportedfiles)
+            {
+                alltypes += "*" + ftype + ";";
+            }
+            alltypes = alltypes.Substring(0, alltypes.Length - 1);
         }
 
         private void listBoxSongs_SelectedIndexChanged(object sender, EventArgs e)
@@ -427,6 +435,7 @@ namespace Modern_UI_audio_player
             listBoxSongs.Items.Clear();
             //Code to Select Songs
             OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = alltypes;
             //Code to select multiple files
             ofd.Multiselect = true;
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
