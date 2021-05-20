@@ -29,6 +29,9 @@ namespace Modern_UI_audio_player
         bool shuffle = false;
         public int maxsongs;
         string[] songextensions = { ".mp3", ".wav", ".wma", ".flac", ".ogg", ".aac", ".m4a" };
+        string[] fileextensions = { ".cda" };
+        string[] supportedfiles;
+        string alltypes = "All Supported Formats|";
         private void customizeDesign()
         {
             panelMediaSubMenu.Visible = false;
@@ -250,9 +253,7 @@ namespace Modern_UI_audio_player
             btnPlay.Show();
             alreadyPlaying = false;
         }
-        string[] fileextensions = { ".pdf" };
-        string[] supportedfiles;
-        string alltypes = "All Supported Formats|";
+       
         private void Form1_Load(object sender, EventArgs e)
         {
             panelNowPlaying.Hide();
