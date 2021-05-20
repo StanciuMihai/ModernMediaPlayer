@@ -21,12 +21,14 @@ namespace Modern_UI_audio_player
             customizeDesign();
         }
         public static String[] paths, files;
-        public static System.Windows.Forms.TextBox txtSong = new TextBox();
+        public static TextBox txtSong = new TextBox();
+        public static string vis = "Visualisation";
         bool isStopped = true;
         bool alreadyPlaying = false;
         bool repeat = false;
         bool shuffle = false;
         public int maxsongs;
+        string[] songextensions = { ".mp3", ".wav", ".wma", ".flac", ".ogg", ".aac", ".m4a" };
         private void customizeDesign()
         {
             panelMediaSubMenu.Visible = false;
@@ -187,7 +189,7 @@ namespace Modern_UI_audio_player
             alreadyPlaying = false;
 
         }
-        public static string vis = "Visualisation";
+        
         private void btnPlay_Click(object sender, EventArgs e)
         {
            
@@ -429,7 +431,7 @@ namespace Modern_UI_audio_player
             lblVolume.Text = "0%";
             axWindowsMediaPlayer1.settings.volume = 0;
         }
-        string[] songextensions = { ".mp3", ".wav", ".wma", ".flac", ".ogg", ".aac", ".m4a" };
+       
         private void btnAddToPlaylist_Click(object sender, EventArgs e)
         {
             listBoxSongs.Items.Clear();
