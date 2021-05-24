@@ -91,6 +91,7 @@ namespace Modern_UI_audio_player
         private void btnOpenRecentMedia_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+
         }
 
         private void btnNewPlaylist_Click(object sender, EventArgs e)
@@ -124,6 +125,9 @@ namespace Modern_UI_audio_player
         private void btnEffectsAndFilters_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new UnderConstruction());
+            panelNowPlaying.Hide();
+            alreadyPlaying = false;
         }
 
         private void btnPreferences_Click(object sender, EventArgs e)
