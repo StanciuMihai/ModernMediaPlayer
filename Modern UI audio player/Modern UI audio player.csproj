@@ -201,6 +201,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UnderConstruction.resx">
+      <DependentUpon>UnderConstruction.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Visualisation.resx">
       <DependentUpon>Visualisation.cs</DependentUpon>
     </EmbeddedResource>
