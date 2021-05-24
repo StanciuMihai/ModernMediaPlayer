@@ -55,6 +55,7 @@ namespace Modern_UI_audio_player
             this.textBox1.ForeColor = System.Drawing.Color.White;
             this.textBox1.Location = new System.Drawing.Point(0, 394);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(684, 37);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Work In Progress";
