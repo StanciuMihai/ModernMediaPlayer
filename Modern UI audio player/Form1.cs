@@ -81,16 +81,25 @@ namespace Modern_UI_audio_player
         private void btnOpenFolder_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new UnderConstruction());
+            panelNowPlaying.Hide();
+            alreadyPlaying = false;
         }
 
         private void btnOpenDisk_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new UnderConstruction());
+            panelNowPlaying.Hide();
+            alreadyPlaying = false;
         }
 
         private void btnOpenRecentMedia_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new UnderConstruction());
+            panelNowPlaying.Hide();
+            alreadyPlaying = false;
 
         }
 
