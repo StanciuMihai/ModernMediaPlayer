@@ -120,6 +120,9 @@ namespace Modern_UI_audio_player
         private void btnMediaConverter_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new UnderConstruction());
+            panelNowPlaying.Hide();
+            alreadyPlaying = false;
         }
 
         private void btnEffectsAndFilters_Click(object sender, EventArgs e)
@@ -133,6 +136,9 @@ namespace Modern_UI_audio_player
         private void btnPreferences_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new UnderConstruction());
+            panelNowPlaying.Hide();
+            alreadyPlaying = false;
         }
 
         private void btnTheme_Click(object sender, EventArgs e)
