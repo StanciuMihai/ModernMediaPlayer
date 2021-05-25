@@ -105,16 +105,25 @@ namespace Modern_UI_audio_player
         private void btnManagePlaylist_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new UnderConstruction());
+            panelNowPlaying.Hide();
+            alreadyPlaying = false;
         }
 
         private void btnImportPlaylist_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new UnderConstruction());
+            panelNowPlaying.Hide();
+            alreadyPlaying = false;
         }
 
         private void btnExportPlaylist_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new UnderConstruction());
+            panelNowPlaying.Hide();
+            alreadyPlaying = false;
         }
 
         private void btnMediaConverter_Click(object sender, EventArgs e)
