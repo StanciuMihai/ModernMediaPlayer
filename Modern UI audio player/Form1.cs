@@ -196,7 +196,7 @@ namespace Modern_UI_audio_player
         private void openChildForm(Form childForm)
         {
             if (activeForm != null)
-                activeForm.Hide(); // Replaced Close with Hide for testing purposes
+                activeForm.Hide(); // Replaced Close with Hide for better functionality and less resource consumption
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -271,8 +271,7 @@ namespace Modern_UI_audio_player
         {
             if (isStopped == false)
             {
-                activeForm.Hide(); //Replaced Close with Hide for testing purposes
-                //Application.OpenForms[vis].Close();
+                activeForm.Hide(); //Replaced Close with Hide for better functionality and less resource consumption
                 isStopped = true;
             }
             panelNowPlaying.Hide();
@@ -409,17 +408,19 @@ namespace Modern_UI_audio_player
 
         private void axWindowsMediaPlayer1_PlayStateChange(object sender, _WMPOCXEvents_PlayStateChangeEvent e)
         {
-            //if ((e.newState == 1) && (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsMediaEnded))
-            //{
-            //    if (listBoxSongs.SelectedIndex != listBoxSongs.Items.Count - 1)
-            //    {
-            //        BeginInvoke(new Action(() => {
-            //            listBoxSongs.SelectedIndex = listBoxSongs.SelectedIndex + 1;
-            //            axWindowsMediaPlayer1.Ctlcontrols.play();
-            //        }));
-            //        
-            //    }
-            // }
+            /*
+                if ((e.newState == 1) && (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsMediaEnded))
+            {
+                if (listBoxSongs.SelectedIndex != listBoxSongs.Items.Count - 1)
+                {
+                    BeginInvoke(new Action(() => {
+                        listBoxSongs.SelectedIndex = listBoxSongs.SelectedIndex + 1;
+                        axWindowsMediaPlayer1.Ctlcontrols.play();
+                    }));
+                    
+                }
+             }
+            */ 
             if (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
             {
 
