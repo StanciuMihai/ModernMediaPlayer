@@ -22,6 +22,8 @@ At some point in development, the app looked something like this:
 **UPDATE:** Added 16 new visualisations to the music player:
 ![alt text](https://raw.githubusercontent.com/StanciuMihai/ModernMediaPlayer/master/preview5.png)
 
+![alt text](https://raw.githubusercontent.com/StanciuMihai/ModernMediaPlayer/master/preview6.png)
+
 
 
 
