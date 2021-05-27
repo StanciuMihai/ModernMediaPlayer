@@ -16,5 +16,10 @@ namespace Modern_UI_audio_player
         {
             InitializeComponent();
         }
+
+        private void btnCloseInnerForm_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -32,6 +32,7 @@ namespace Modern_UI_audio_player
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnderConstruction));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnCloseInnerForm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,12 +64,27 @@ namespace Modern_UI_audio_player
             this.textBox1.Text = "Work In Progress";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // btnCloseInnerForm
+            // 
+            this.btnCloseInnerForm.FlatAppearance.BorderSize = 0;
+            this.btnCloseInnerForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseInnerForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseInnerForm.ForeColor = System.Drawing.Color.LightGray;
+            this.btnCloseInnerForm.Location = new System.Drawing.Point(12, 12);
+            this.btnCloseInnerForm.Name = "btnCloseInnerForm";
+            this.btnCloseInnerForm.Size = new System.Drawing.Size(35, 30);
+            this.btnCloseInnerForm.TabIndex = 10;
+            this.btnCloseInnerForm.Text = "X";
+            this.btnCloseInnerForm.UseVisualStyleBackColor = true;
+            this.btnCloseInnerForm.Click += new System.EventHandler(this.btnCloseInnerForm_Click);
+            // 
             // UnderConstruction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(684, 431);
+            this.Controls.Add(this.btnCloseInnerForm);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "UnderConstruction";
@@ -83,5 +99,6 @@ namespace Modern_UI_audio_player
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnCloseInnerForm;
     }
 }
