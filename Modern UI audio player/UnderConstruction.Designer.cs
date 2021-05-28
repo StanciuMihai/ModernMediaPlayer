@@ -61,7 +61,7 @@ namespace Modern_UI_audio_player
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(684, 37);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Work In Progress";
+            this.textBox1.Text = "Work In Progress!";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnCloseInnerForm
