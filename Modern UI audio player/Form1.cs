@@ -408,6 +408,7 @@ namespace Modern_UI_audio_player
 
         private void axWindowsMediaPlayer1_PlayStateChange(object sender, _WMPOCXEvents_PlayStateChangeEvent e)
         {
+            //Alternate code sequence for changing song, useful for on-click play
             /*
                 if ((e.newState == 1) && (axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsMediaEnded))
             {
