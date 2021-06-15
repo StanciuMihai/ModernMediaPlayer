@@ -331,6 +331,7 @@ namespace Modern_UI_audio_player
                     btnPlay.Hide();
 
                 }
+                //if the selected song in the playlist is the last one, loop back and select the first one
                 if ((listBoxSongs.SelectedIndex + 1) == maxsongs)
                 {
                     listBoxSongs.SelectedIndex = 0;
