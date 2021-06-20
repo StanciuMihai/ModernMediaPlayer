@@ -335,6 +335,7 @@ namespace Modern_UI_audio_player
                 if ((listBoxSongs.SelectedIndex + 1) == maxsongs)
                 {
                     listBoxSongs.SelectedIndex = 0;
+                    //if the shuffle button is active, play a random song next
                     if (shuffle == true)
                     {
                         Random r = new Random();
@@ -349,6 +350,7 @@ namespace Modern_UI_audio_player
                 {
                     axWindowsMediaPlayer1.Ctlcontrols.stop();
                     listBoxSongs.SelectedIndex++;
+                    //if the shuffle button is active, play a random song next
                     if (shuffle == true)
                     {
                         Random r = new Random();
